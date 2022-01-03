@@ -1,5 +1,5 @@
 
-    <div class="product-single__meta ps-0 ps-xl-3 {% if section.settings.product_sticky%}sticky-top{% endif %}">  
+    <div class="product-single__meta ps-0 ps-xl-3 {% if section.settings.product_sticky%}sticky-top{% endif %}">
         {%- assign collapsible_first = false-%}
         {%- for block in section.blocks -%}
             {% if block.type == 'collapsible_tab' %}
@@ -15,7 +15,7 @@
                     <div class="product-single__text {{ block.settings.block_margin }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
                 {%- when 'countdown' -%}
                     {%- if product.metafields.my_fields.countdown != blank -%}
-                        {% assign final_time = product.metafields.my_fields.countdown %} 
+                        {% assign final_time = product.metafields.my_fields.countdown %}
                         <div class="product-single__countdown {{ block.settings.block_margin }}" {{ block.shopify_attributes }}>
                             <h5 class="countdown-title">{{ block.settings.heading }}</h5>
                             <div class="product-card__countdown d-flex text-center" data-countdown="{{ final_time }}"></div>
@@ -57,7 +57,7 @@
                                 {%- if forloop.last -%}
                                 <a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }}</a>
                                 {%- else -%}
-                                <a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }},</a> 
+                                <a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }},</a>
                                 {%- endif -%}
                             {% endfor %}
                             </div>
@@ -196,7 +196,7 @@
                                       {% if personalization_option == 'Personalization'%}
                                     <label for="personalization"><b>Add your personalization:</b></label>
                                       <p class="">Enter the name you want on the towel EXACTLY how you want it written. Thank you!</p>
-                                      <textarea id="personalizationNameField" type="text" name="properties[personalizationNameField]" ></textarea>
+                                      <textarea id="personalizationNameField" type="text" name="properties[Name]" ></textarea>
                                       {% endif %}
                                     {% endfor %}
                                 </div>
@@ -251,7 +251,7 @@
                                         <div class="product-quantity__selector">
                                             {%- if block.settings.quantity_selector == 'text' -%}
                                                 <div class="vela-qty">
-                                                    <button type="button" class="js-qty-adjust vela-qty__adjust vela-qty__adjust--minus" aria-label="{{ 'cart.general.reduce_quantity' | t }}">                                            
+                                                    <button type="button" class="js-qty-adjust vela-qty__adjust vela-qty__adjust--minus" aria-label="{{ 'cart.general.reduce_quantity' | t }}">
                                                         {% render 'icons', icon: 'minus' %}
                                                     </button>
                                                     <input type="text" name="quantity" class="js-qty-number vela-qty__number" value="1" min="1" aria-label="quantity" pattern="[0-9]*">
@@ -286,9 +286,9 @@
                                     {{ form | payment_button }}
                                 {% endif %}
                             </div>
-                        {% endform %} 
-                    </div>  
-            
+                        {% endform %}
+                    </div>
+
                 {%- when 'popup' -%}
                     <div class="popup--wrap {{ block.settings.block_margin}}">
                         <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#PopupModal-{{ block.id }}">
@@ -312,7 +312,7 @@
                     <div class="product-single__meta {{ block.settings.block_margin}}">
                         {% comment %}Social sharing{% endcomment %}
                         {% include 'social-sharing', share_label: block.settings.share_label, share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}
-                       
+
                     </div>
             {%- endcase -%}
         {%- endfor -%}
