@@ -351,24 +351,6 @@
     "16408337920106827e": {
       "type": "testimonial",
       "blocks": {
-        "9d480560-c0d2-4e44-9af3-2b2be9f3804a": {
-          "type": "item",
-          "settings": {
-            "avatar": "shopify:\/\/shop_images\/Woman_1.png",
-            "name": "Madaliene",
-            "position": "",
-            "review": "My granddaughter LOVED her unicorn hooded bath towel.\nIt was adorable!! One of her favorite Christmas presents."
-          }
-        },
-        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d": {
-          "type": "item",
-          "settings": {
-            "avatar": "shopify:\/\/shop_images\/Woman_3.png",
-            "name": "Sarah",
-            "position": "",
-            "review": "They look and feel amazing! They’re large enough to swaddle my toddlers with, and the attention to detail is fantastic. I’ll be buying all of my children’s towels from here from now on!"
-          }
-        },
         "78a7a827-8698-48b7-97d6-6813f7ad98ea": {
           "type": "item",
           "settings": {
@@ -376,6 +358,15 @@
             "name": "Beth",
             "position": "",
             "review": "Adorable!! I was skeptical to get one of these for my little one. However, I am very pleased with my purchase & I cant wait to give it to him for Christmas! The creativity & quality is amazing. thank you so much!!"
+          }
+        },
+        "9d480560-c0d2-4e44-9af3-2b2be9f3804a": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/Woman_1.png",
+            "name": "Madaliene",
+            "position": "",
+            "review": "My granddaughter LOVED her unicorn hooded bath towel.\nIt was adorable!! One of her favorite Christmas presents."
           }
         },
         "1e33fac7-bb8f-478f-a566-ca291d79141c": {
@@ -386,13 +377,22 @@
             "position": "",
             "review": "So great! My daughters enjoyed searching for the items. Excited to have these for long car rides and just in the diaper bag for distractions."
           }
+        },
+        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d": {
+          "type": "item",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/Woman_3.png",
+            "name": "Sarah",
+            "position": "",
+            "review": "They look and feel amazing! They’re large enough to swaddle my toddlers with, and the attention to detail is fantastic. I’ll be buying all of my children’s towels from here from now on!"
+          }
         }
       },
       "block_order": [
-        "9d480560-c0d2-4e44-9af3-2b2be9f3804a",
-        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d",
         "78a7a827-8698-48b7-97d6-6813f7ad98ea",
-        "1e33fac7-bb8f-478f-a566-ca291d79141c"
+        "9d480560-c0d2-4e44-9af3-2b2be9f3804a",
+        "1e33fac7-bb8f-478f-a566-ca291d79141c",
+        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d"
       ],
       "settings": {
         "full_with": false,
