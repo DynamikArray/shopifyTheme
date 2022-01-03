@@ -1,1 +1,436 @@
-{"sections":{"162566980471ae6442":{"type":"slideshow","disabled":true,"blocks":{"cdb8181e-e404-4b9d-a53b-46b4a7406435":{"type":"image","settings":{"content_color":"rgba(0,0,0,0)","position_content":true,"image":"shopify:\/\/shop_images\/homestyle_banner.gif","image_mobile":"shopify:\/\/shop_images\/Hooded_Towels_Slide_Background.png","link":"shopify:\/\/collections\/hooded-towels","alignment":"text-left align-bottom","text-alignment":"left","slides_effect":"topbottom","subheading":"","subheading_color":"#000000","subheading_font_family":"h3","subheading_font_size":14,"title":"<span style=\"font-weight: 800\">Hooded Towels <\/span>","title_color":"#1f2021","title_font_family":"h3","title_font_size":85,"title2":"","title2_color":"#ffffff","title2_font_family":"h3","title2_font_size":148,"desc":"Many, many different designs &amp; characters to choose from.","desc_color":"#4e4949","desc_font_family":"h3","desc_font_size":34,"btn_text":"Shop Now","btn_font_size":16,"btn_link":"shopify:\/\/collections\/dog-food","btn_padding":"11px 30px","btn_text_color":"#ffffff","btn_border_color":"#0f8989","btn_bg_color":"#0cb1b1"}},"b20fe379-f5da-43f7-844e-97076c891927":{"type":"image","disabled":true,"settings":{"content_color":"rgba(0,0,0,0)","position_content":true,"link":"","alignment":"text-center align-middle","text-alignment":"center","slides_effect":"leftright","subheading":"","subheading_color":"#ffffff","subheading_font_family":"h3","subheading_font_size":14,"title":"<span style=\"font-weight: 800\">New Puppy or Kitten?<\/span>","title_color":"#ffffff","title_font_family":"h3","title_font_size":60,"title2":"","title2_color":"#ffffff","title2_font_family":"ff-special","title2_font_size":150,"desc":"with an all-out, at-home birthday party.","desc_color":"#ffffff","desc_font_family":"h3","desc_font_size":24,"btn_text":"Shop Now","btn_font_size":15,"btn_link":"shopify:\/\/collections\/cat-food","btn_padding":"11px 30px","btn_text_color":"#ffffff","btn_border_color":"#000000","btn_bg_color":"#000000"}},"65f33f58-eeb5-4f62-8a20-8826b6637261":{"type":"image","disabled":true,"settings":{"content_color":"rgba(0,0,0,0)","position_content":true,"link":"","alignment":"text-center align-middle","text-alignment":"center","slides_effect":"topbottom","subheading":"","subheading_color":"#000000","subheading_font_family":"h3","subheading_font_size":14,"title":"<span style=\"font-weight: 800\">Everything Your Pet Needs<\/span>","title_color":"#ffffff","title_font_family":"h3","title_font_size":60,"title2":"","title2_color":"#ffffff","title2_font_family":"ff-special","title2_font_size":150,"desc":"with an all-out, at-home birthday party.","desc_color":"#ffffff","desc_font_family":"h3","desc_font_size":24,"btn_text":"Shop Now","btn_font_size":14,"btn_link":"shopify:\/\/collections\/cat-toy","btn_padding":"11px 30px","btn_text_color":"#ffffff","btn_border_color":"#000000","btn_bg_color":"#000000"}}},"block_order":["cdb8181e-e404-4b9d-a53b-46b4a7406435","b20fe379-f5da-43f7-844e-97076c891927","65f33f58-eeb5-4f62-8a20-8826b6637261"],"settings":{"full_with":true,"color_bg":"rgba(0,0,0,0)","padding_block":"","margin_block":"0 0 60px","navigation":true,"pagination":true,"fade":true,"autoplay":true,"autoplay_speed":"8000"}},"1633486411846e17ae":{"type":"multi-image-with-text","blocks":{"1633486411846e17ae-0":{"type":"feature_item","settings":{"width":"col-12 col-md-6","shadow":false,"image_size":"690x342","image_ratio":"adapt","crop":false,"button_url":"","subtitle":"<span class=\"fw-bold\">20% OFF ALL ITEMS<\/span>","heading_subcolor":"#ffffff","title":"Hot Summer<br>Deals","heading_color":"#ffffff","content":"","text_color":"#000000","button":"shop now","button_color":"#ffffff","button_border_color":"#ed6436","button_color_bg":"#ed6436","text_align":"left","banner_position":"over"}},"1633486411846e17ae-1":{"type":"feature_item","settings":{"width":"col-12 col-md-6","shadow":false,"image_size":"690x342","image_ratio":"adapt","crop":false,"button_url":"","subtitle":"<span class=\"fw-bold\">TOYS, TREATS & LEASHES<\/span>","heading_subcolor":"#000000","title":"Now<br>At Wilone","heading_color":"#000000","content":"","text_color":"#000000","button":"Shop now","button_color":"#ffffff","button_border_color":"#ed6436","button_color_bg":"#ed6436","text_align":"left","banner_position":"over"}}},"block_order":["1633486411846e17ae-0","1633486411846e17ae-1"],"settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"0 0 0px","margin_block":"40px 0 0px","heading":"","sub_heading":"","space_between":"4"}},"1641167132cc52eb17":{"type":"border","settings":{"full_with":false,"margin_block":"20px 0 20px 0px","border_style":"dotted","border_width":6,"border_color":"#0cb1b1"}},"1633487326470935f8":{"type":"product-list","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"0 0 0px","margin_block":"0px 0px 0px 0px","heading":"Featured Products","sub_heading":"Some of our most popular items","collection_handle":"featured-products","limit":8,"product_style":"grid","grid_style":"default","button_text":"","slide_enable":true,"navigation":true,"infinite":true,"autoplay":false,"autoplay_speed":"10000","column1":4,"column2":3,"column3":2,"column4":2}},"1640833961669182fa":{"type":"border","settings":{"full_with":false,"margin_block":"40px 0px 20px 0px","border_style":"dotted","border_width":6,"border_color":"#0cb1b1"}},"1641167390294fc225":{"type":"heading","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"","margin_block":"0 0 0px","heading":"Product Collection","sub_heading":"View our top product collections","text_alignment":"center"}},"1640834542c92c871c":{"type":"collection-five","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"0px 0px 0px 0px","margin_block":"0 0 0px","title1":"Hooded Towels","single_images1":"shopify:\/\/shop_images\/child_hooded_towel.jpg","collection_handle1":"hooded-towels","title2":"Crayon Rolls","single_images2":"shopify:\/\/shop_images\/Blank_Collection_Images.png","collection_handle2":"crayon-roll","title3":"I SPY BAGS","single_images3":"shopify:\/\/shop_images\/Blank_Collection_Images.png","collection_handle3":"i-spy-bags","title4":"Fleece Blankets","single_images4":"shopify:\/\/shop_images\/Blank_Collection_Images.png","collection_handle4":"fleece-blankets","title5":"Pillows","single_images5":"shopify:\/\/shop_images\/Blank_Collection_Images.png","collection_handle5":"pocket-pillows"}},"1641165071b44add24":{"type":"services","blocks":{"1641165071f71a53ea-2":{"type":"item","settings":{"box_title":"Top Quality","color_title":"#ffffff","title_font_size":24,"box_desc":"With great materials and attention to the details our products stand up to your little ones.","color_desc":"#fff","desc_font_size":15}},"1641165071f71a53ea-0":{"type":"item","settings":{"box_title":"Excellent Reviews","color_title":"#ffffff","title_font_size":24,"box_desc":"Over 1000 5 Star reviews and many more satisfied customers, our work speaks for itself","color_desc":"#fff","desc_font_size":15}},"1641165071f71a53ea-1":{"type":"item","settings":{"box_title":"Safe Shipping","color_title":"#ffffff","title_font_size":24,"box_desc":"Orders are carefully packaged and shipped so your product arrives ready to go","color_desc":"#fff","desc_font_size":15}},"1641165071f71a53ea-3":{"type":"item","settings":{"box_title":"Secure Payment","color_title":"#ffffff","title_font_size":24,"box_desc":"We use industry leading Shopfiy so your information is always safe and secure.","color_desc":"#ffffff","desc_font_size":15}}},"block_order":["1641165071f71a53ea-2","1641165071f71a53ea-0","1641165071f71a53ea-1","1641165071f71a53ea-3"],"settings":{"full_with":true,"color_bg":"#0cb1b1","padding_block":"20px 0px 40px 0px","margin_block":"60px 0 60px","heading":"Our Services","sub_heading":"","iconsize":"70x70","image_ratio":"adapt","crop":false,"slide_enable":true,"navigation":true,"infinite":false,"autoplay":false,"autoplay_speed":"10000","column1":4,"column2":3,"column3":2,"column4":2}},"16408337920106827e":{"type":"testimonial","blocks":{"9d480560-c0d2-4e44-9af3-2b2be9f3804a":{"type":"item","settings":{"name":"Madaliene","position":"","review":"My granddaughter LOVED her unicorn hooded bath towel.\nIt was adorable!! One of her favorite Christmas presents."}},"c4f52bdf-3bbd-4956-a81b-9211fbacfb2d":{"type":"item","settings":{"name":"Sarah","position":"","review":"They look and feel amazing! They’re large enough to swaddle my toddlers with, and the attention to detail is fantastic. I’ll be buying all of my children’s towels from here from now on!"}},"78a7a827-8698-48b7-97d6-6813f7ad98ea":{"type":"item","settings":{"name":"Beth","position":"","review":"Adorable!! I was skeptical to get one of these for my little one. However, I am very pleased with my purchase & I cant wait to give it to him for Christmas! The creativity & quality is amazing. thank you so much!!"}},"1e33fac7-bb8f-478f-a566-ca291d79141c":{"type":"item","settings":{"name":"Heather","position":"","review":"So great! My daughters enjoyed searching for the items. Excited to have these for long car rides and just in the diaper bag for distractions."}}},"block_order":["9d480560-c0d2-4e44-9af3-2b2be9f3804a","c4f52bdf-3bbd-4956-a81b-9211fbacfb2d","78a7a827-8698-48b7-97d6-6813f7ad98ea","1e33fac7-bb8f-478f-a566-ca291d79141c"],"settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"","margin_block":"0 0 30px","heading":"Customer Reviews","sub_heading":"See what our customers have to say","size":"100x100","slide_enable":true,"navigation":true,"pagination":true,"infinite":true,"autoplay":false,"autoplay_speed":"10000","column1":4,"column2":3,"column3":2,"column4":2}},"1641164958fd299266":{"type":"contact-form","settings":{"full_with":false,"color_bg":"#0cb1b1","padding_block":"","margin_block":"0 0 0px","heading":"Dont see what your looking for?  Contact us for custom orders!"}}},"order":["162566980471ae6442","1633486411846e17ae","1641167132cc52eb17","1633487326470935f8","1640833961669182fa","1641167390294fc225","1640834542c92c871c","1641165071b44add24","16408337920106827e","1641164958fd299266"]}
+{
+  "sections": {
+    "162566980471ae6442": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "cdb8181e-e404-4b9d-a53b-46b4a7406435": {
+          "type": "image",
+          "settings": {
+            "content_color": "rgba(0,0,0,0)",
+            "position_content": true,
+            "image": "shopify:\/\/shop_images\/homestyle_banner.gif",
+            "image_mobile": "shopify:\/\/shop_images\/Hooded_Towels_Slide_Background.png",
+            "link": "shopify:\/\/collections\/hooded-towels",
+            "alignment": "text-left align-bottom",
+            "text-alignment": "left",
+            "slides_effect": "topbottom",
+            "subheading": "",
+            "subheading_color": "#000000",
+            "subheading_font_family": "h3",
+            "subheading_font_size": 14,
+            "title": "<span style=\"font-weight: 800\">Hooded Towels <\/span>",
+            "title_color": "#1f2021",
+            "title_font_family": "h3",
+            "title_font_size": 85,
+            "title2": "",
+            "title2_color": "#ffffff",
+            "title2_font_family": "h3",
+            "title2_font_size": 148,
+            "desc": "Many, many different designs &amp; characters to choose from.",
+            "desc_color": "#4e4949",
+            "desc_font_family": "h3",
+            "desc_font_size": 34,
+            "btn_text": "Shop Now",
+            "btn_font_size": 16,
+            "btn_link": "shopify:\/\/collections\/dog-food",
+            "btn_padding": "11px 30px",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#0f8989",
+            "btn_bg_color": "#0cb1b1"
+          }
+        },
+        "b20fe379-f5da-43f7-844e-97076c891927": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_color": "rgba(0,0,0,0)",
+            "position_content": true,
+            "link": "",
+            "alignment": "text-center align-middle",
+            "text-alignment": "center",
+            "slides_effect": "leftright",
+            "subheading": "",
+            "subheading_color": "#ffffff",
+            "subheading_font_family": "h3",
+            "subheading_font_size": 14,
+            "title": "<span style=\"font-weight: 800\">New Puppy or Kitten?<\/span>",
+            "title_color": "#ffffff",
+            "title_font_family": "h3",
+            "title_font_size": 60,
+            "title2": "",
+            "title2_color": "#ffffff",
+            "title2_font_family": "ff-special",
+            "title2_font_size": 150,
+            "desc": "with an all-out, at-home birthday party.",
+            "desc_color": "#ffffff",
+            "desc_font_family": "h3",
+            "desc_font_size": 24,
+            "btn_text": "Shop Now",
+            "btn_font_size": 15,
+            "btn_link": "shopify:\/\/collections\/cat-food",
+            "btn_padding": "11px 30px",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_bg_color": "#000000"
+          }
+        },
+        "65f33f58-eeb5-4f62-8a20-8826b6637261": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "content_color": "rgba(0,0,0,0)",
+            "position_content": true,
+            "link": "",
+            "alignment": "text-center align-middle",
+            "text-alignment": "center",
+            "slides_effect": "topbottom",
+            "subheading": "",
+            "subheading_color": "#000000",
+            "subheading_font_family": "h3",
+            "subheading_font_size": 14,
+            "title": "<span style=\"font-weight: 800\">Everything Your Pet Needs<\/span>",
+            "title_color": "#ffffff",
+            "title_font_family": "h3",
+            "title_font_size": 60,
+            "title2": "",
+            "title2_color": "#ffffff",
+            "title2_font_family": "ff-special",
+            "title2_font_size": 150,
+            "desc": "with an all-out, at-home birthday party.",
+            "desc_color": "#ffffff",
+            "desc_font_family": "h3",
+            "desc_font_size": 24,
+            "btn_text": "Shop Now",
+            "btn_font_size": 14,
+            "btn_link": "shopify:\/\/collections\/cat-toy",
+            "btn_padding": "11px 30px",
+            "btn_text_color": "#ffffff",
+            "btn_border_color": "#000000",
+            "btn_bg_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "cdb8181e-e404-4b9d-a53b-46b4a7406435",
+        "b20fe379-f5da-43f7-844e-97076c891927",
+        "65f33f58-eeb5-4f62-8a20-8826b6637261"
+      ],
+      "settings": {
+        "full_with": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "",
+        "margin_block": "0 0 60px",
+        "navigation": true,
+        "pagination": true,
+        "fade": true,
+        "autoplay": true,
+        "autoplay_speed": "8000"
+      }
+    },
+    "1633486411846e17ae": {
+      "type": "multi-image-with-text",
+      "blocks": {
+        "1633486411846e17ae-0": {
+          "type": "feature_item",
+          "settings": {
+            "width": "col-12 col-md-6",
+            "shadow": false,
+            "image_size": "690x342",
+            "image_ratio": "adapt",
+            "crop": false,
+            "button_url": "",
+            "subtitle": "<span class=\"fw-bold\">20% OFF ALL ITEMS<\/span>",
+            "heading_subcolor": "#ffffff",
+            "title": "Hot Summer<br>Deals",
+            "heading_color": "#ffffff",
+            "content": "",
+            "text_color": "#000000",
+            "button": "shop now",
+            "button_color": "#ffffff",
+            "button_border_color": "#ed6436",
+            "button_color_bg": "#ed6436",
+            "text_align": "left",
+            "banner_position": "over"
+          }
+        },
+        "1633486411846e17ae-1": {
+          "type": "feature_item",
+          "settings": {
+            "width": "col-12 col-md-6",
+            "shadow": false,
+            "image_size": "690x342",
+            "image_ratio": "adapt",
+            "crop": false,
+            "button_url": "",
+            "subtitle": "<span class=\"fw-bold\">TOYS, TREATS & LEASHES<\/span>",
+            "heading_subcolor": "#000000",
+            "title": "Now<br>At Wilone",
+            "heading_color": "#000000",
+            "content": "",
+            "text_color": "#000000",
+            "button": "Shop now",
+            "button_color": "#ffffff",
+            "button_border_color": "#ed6436",
+            "button_color_bg": "#ed6436",
+            "text_align": "left",
+            "banner_position": "over"
+          }
+        }
+      },
+      "block_order": [
+        "1633486411846e17ae-0",
+        "1633486411846e17ae-1"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 0px",
+        "margin_block": "40px 0 0px",
+        "heading": "",
+        "sub_heading": "",
+        "space_between": "4"
+      }
+    },
+    "1641167132cc52eb17": {
+      "type": "border",
+      "settings": {
+        "full_with": false,
+        "margin_block": "20px 0 20px 0px",
+        "border_style": "dotted",
+        "border_width": 6,
+        "border_color": "#0cb1b1"
+      }
+    },
+    "1633487326470935f8": {
+      "type": "product-list",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 0px",
+        "margin_block": "0px 0px 0px 0px",
+        "heading": "Featured Products",
+        "sub_heading": "Some of our most popular items",
+        "collection_handle": "featured-products",
+        "limit": 8,
+        "product_style": "grid",
+        "grid_style": "default",
+        "button_text": "",
+        "slide_enable": true,
+        "navigation": true,
+        "infinite": true,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 4,
+        "column2": 3,
+        "column3": 2,
+        "column4": 2
+      }
+    },
+    "1640833961669182fa": {
+      "type": "border",
+      "settings": {
+        "full_with": false,
+        "margin_block": "40px 0px 20px 0px",
+        "border_style": "dotted",
+        "border_width": 6,
+        "border_color": "#0cb1b1"
+      }
+    },
+    "1641167390294fc225": {
+      "type": "heading",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "",
+        "margin_block": "0 0 0px",
+        "heading": "Product Collection",
+        "sub_heading": "View our top product collections",
+        "text_alignment": "center"
+      }
+    },
+    "1640834542c92c871c": {
+      "type": "collection-five",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0px 0px 0px 0px",
+        "margin_block": "0 0 0px",
+        "title1": "Hooded Towels",
+        "single_images1": "shopify:\/\/shop_images\/child_hooded_towel.jpg",
+        "collection_handle1": "hooded-towels",
+        "title2": "Crayon Rolls",
+        "single_images2": "shopify:\/\/shop_images\/Blank_Collection_Images.png",
+        "collection_handle2": "crayon-roll",
+        "title3": "I SPY BAGS",
+        "single_images3": "shopify:\/\/shop_images\/Blank_Collection_Images.png",
+        "collection_handle3": "i-spy-bags",
+        "title4": "Fleece Blankets",
+        "single_images4": "shopify:\/\/shop_images\/Blank_Collection_Images.png",
+        "collection_handle4": "fleece-blankets",
+        "title5": "Pillows",
+        "single_images5": "shopify:\/\/shop_images\/Blank_Collection_Images.png",
+        "collection_handle5": "pocket-pillows"
+      }
+    },
+    "1641165071b44add24": {
+      "type": "services",
+      "blocks": {
+        "1641165071f71a53ea-2": {
+          "type": "item",
+          "settings": {
+            "box_title": "Top Quality",
+            "color_title": "#ffffff",
+            "title_font_size": 24,
+            "box_desc": "With great materials and attention to the details our products stand up to your little ones.",
+            "color_desc": "#fff",
+            "desc_font_size": 15
+          }
+        },
+        "1641165071f71a53ea-0": {
+          "type": "item",
+          "settings": {
+            "box_title": "Excellent Reviews",
+            "color_title": "#ffffff",
+            "title_font_size": 24,
+            "box_desc": "Over 1000 5 Star reviews and many more satisfied customers, our work speaks for itself",
+            "color_desc": "#fff",
+            "desc_font_size": 15
+          }
+        },
+        "1641165071f71a53ea-1": {
+          "type": "item",
+          "settings": {
+            "box_title": "Safe Shipping",
+            "color_title": "#ffffff",
+            "title_font_size": 24,
+            "box_desc": "Orders are carefully packaged and shipped so your product arrives ready to go",
+            "color_desc": "#fff",
+            "desc_font_size": 15
+          }
+        },
+        "1641165071f71a53ea-3": {
+          "type": "item",
+          "settings": {
+            "box_title": "Secure Payment",
+            "color_title": "#ffffff",
+            "title_font_size": 24,
+            "box_desc": "We use industry leading Shopfiy so your information is always safe and secure.",
+            "color_desc": "#ffffff",
+            "desc_font_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "1641165071f71a53ea-2",
+        "1641165071f71a53ea-0",
+        "1641165071f71a53ea-1",
+        "1641165071f71a53ea-3"
+      ],
+      "settings": {
+        "full_with": true,
+        "color_bg": "#0cb1b1",
+        "padding_block": "20px 0px 40px 0px",
+        "margin_block": "60px 0 60px",
+        "heading": "Our Services",
+        "sub_heading": "",
+        "iconsize": "70x70",
+        "image_ratio": "adapt",
+        "crop": false,
+        "slide_enable": true,
+        "navigation": true,
+        "infinite": false,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 4,
+        "column2": 3,
+        "column3": 2,
+        "column4": 2
+      }
+    },
+    "16408337920106827e": {
+      "type": "testimonial",
+      "blocks": {
+        "9d480560-c0d2-4e44-9af3-2b2be9f3804a": {
+          "type": "item",
+          "settings": {
+            "name": "Madaliene",
+            "position": "",
+            "review": "My granddaughter LOVED her unicorn hooded bath towel.\nIt was adorable!! One of her favorite Christmas presents."
+          }
+        },
+        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d": {
+          "type": "item",
+          "settings": {
+            "name": "Sarah",
+            "position": "",
+            "review": "They look and feel amazing! They’re large enough to swaddle my toddlers with, and the attention to detail is fantastic. I’ll be buying all of my children’s towels from here from now on!"
+          }
+        },
+        "78a7a827-8698-48b7-97d6-6813f7ad98ea": {
+          "type": "item",
+          "settings": {
+            "name": "Beth",
+            "position": "",
+            "review": "Adorable!! I was skeptical to get one of these for my little one. However, I am very pleased with my purchase & I cant wait to give it to him for Christmas! The creativity & quality is amazing. thank you so much!!"
+          }
+        },
+        "1e33fac7-bb8f-478f-a566-ca291d79141c": {
+          "type": "item",
+          "settings": {
+            "name": "Heather",
+            "position": "",
+            "review": "So great! My daughters enjoyed searching for the items. Excited to have these for long car rides and just in the diaper bag for distractions."
+          }
+        }
+      },
+      "block_order": [
+        "9d480560-c0d2-4e44-9af3-2b2be9f3804a",
+        "c4f52bdf-3bbd-4956-a81b-9211fbacfb2d",
+        "78a7a827-8698-48b7-97d6-6813f7ad98ea",
+        "1e33fac7-bb8f-478f-a566-ca291d79141c"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "",
+        "margin_block": "0 0 30px",
+        "heading": "Customer Reviews",
+        "sub_heading": "See what our customers have to say",
+        "size": "100x100",
+        "slide_enable": true,
+        "navigation": true,
+        "pagination": true,
+        "infinite": true,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 4,
+        "column2": 3,
+        "column3": 2,
+        "column4": 2
+      }
+    },
+    "1641164958fd299266": {
+      "type": "contact-form",
+      "settings": {
+        "full_with": false,
+        "color_bg": "#0cb1b1",
+        "padding_block": "",
+        "margin_block": "0 0 0px",
+        "heading": "Dont see what your looking for?  Contact us for custom orders!"
+      }
+    }
+  },
+  "order": [
+    "162566980471ae6442",
+    "1633486411846e17ae",
+    "1641167132cc52eb17",
+    "1633487326470935f8",
+    "1640833961669182fa",
+    "1641167390294fc225",
+    "1640834542c92c871c",
+    "1641165071b44add24",
+    "16408337920106827e",
+    "1641164958fd299266"
+  ]
+}
