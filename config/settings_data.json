@@ -1,1 +1,213 @@
-{"current":{"color_primary":"#0cb1b1","color_secondary":"#f03333","color_body_text":"#868686","color_border":"#e7e7e7","color_header_text":"#ffffff","color_header_bg":"#0cb1b1","color_footer_text":"#868686","color_footer_link":"#868686","color_footer_link_hover":"#0cb1b1","color_footer_bg":"#292a2d","color_copyright_bg":"#292a2d","color_menu_bg":"#0cb1b1","color_menu_text":"#ffffff","color_menu_text_hover":"#ffffff","color_submenu_text":"#868686","color_submenu_text_hover":"#f03333","color_btn_hover_border":"#0cb1b1","color_btn_hover_bg":"#36eded","breadcrumb_bg":"#efefef","breadcrumb_color":"#ffffff","breadcrumb_heading_color":"#ffffff","breadcrumb_color_link":"#ffffff","type_header_font":"pt_sans_narrow_n7","type_header_base_size":36,"type_body_font":"quicksand_n4","type_base_size":16,"type_special_link":"https:\/\/fonts.googleapis.com\/css2?family=Bangers&display=swap","type_special_font":"'Bangers', cursive","type_menu_size":17,"tyep_menu_dropdown_size":15,"font_icon":true,"giftcard_logo":"shopify:\/\/shop_images\/favicon.png","product_reviews_enable":true,"preloading":false,"quickview_enable":true,"quickview_proshortdesc":true,"quickview_prosku":true,"quickview_availability":true,"quickview_protype":true,"quickview_vendor":true,"quickview_quantity_selector":"text","quickview_variant_selector":"radio","quickview_variant_color_enable":true,"cart_type":"page","cart_notes_enable":true,"social_twitter_link":"https:\/\/twitter.com\/","social_facebook_link":"https:\/\/www.facebook.com\/","social_pinterest_link":"https:\/\/www.pinterest.com\/","social_instagram_link":"https:\/\/instagram.com","image_ratio":"square","crop":false,"show_secondary_image":true,"product_card_review":true,"product_card_sale":true,"product_card_available":true,"product_card_new":false,"product_vendor_enable":false,"product_card_shortdesc":false,"product_card_addtocart":true,"product_card_tax":false,"cookie_consent_message":"This website uses cookies to ensure you get the best experience on our website. <a class=\"text-decoration-underline\" href=\"\/policies\/privacy-policy\">Learn more<\/a>","newsletter_popup_enable":true,"newsletter_popup_image":"shopify:\/\/shop_images\/breadcumd.jpg","newsletter_popup_title":"Get Our Email Letter","newsletter_title_color":"#ffffff","newsletter_popup_html":"Subscribe to the Petio mailing list to receive updates on new arrivals, special offers and other discount information.","newsletter_html_color":"#ffffff","newsletter_popup_form_action":"https:\/\/velatheme.us13.list-manage.com\/subscribe\/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14","favicon":"shopify:\/\/shop_images\/favicon.png","checkout_logo_image":"shopify:\/\/shop_images\/logo-black.png","store_develop":false,"cart_quantity_selector":"select","sections":{"header":{"type":"header","blocks":{"4d1df9b0-e83c-4939-8254-cca4200617db":{"type":"menu","settings":{"title":"Catalog","menu":true,"menu_col":"25","menu_menu_col":"100","products":true,"products_col":"25","products_title":"Superheroes Collection","products_collection":"hooded-towels","html":false,"html_col":"25","html_title":"Block Html","html_content":"","banner":false,"banner_col":"33","banner_link":"","collection_enable":true,"collection_title":"Browse By Theme","colllection_col":"50","colllection_col_item":"25","velamenu_list_collection1":"disney","velamenu_list_collection2":"little-princess","velamenu_list_collection3":"superheroes","velamenu_list_collection4":"animals","velamenu_list_collection5":"","velamenu_list_collection6":"","velamenu_list_collection7":"","velamenu_list_collection8":"","velamenu_list_collection9":"","velamenu_list_collection10":""}}},"block_order":["4d1df9b0-e83c-4939-8254-cca4200617db"],"settings":{"fullwidth":false,"padding_block":"10px 0","logo_width":240,"logo_position":"left","menu":"main-menu","enable_sticky_header":false,"menu_text":"Free shipping on orders over $50"}},"footer":{"type":"footer","blocks":{"9d5128de-7cb4-462e-b529-f4cb1bf19616":{"type":"link_list","settings":{"title":"Products","menu":"footer"}},"3d32bd48-4a72-4f2d-a398-8de939a590e1":{"type":"link_list","settings":{"title":"Themes","menu":"themes"}},"46f6b492-5bf9-4dd4-9bb9-87ec7bceaeee":{"type":"link_list","settings":{"title":"Information","menu":"information"}},"cffe8b72-6a12-4941-925e-dde9089a46e6":{"type":"contact_info","settings":{"contactinfo_heading":"Contact Us","logo_width":160,"contactinfo_desc":"If you have any question, please contact us:","contactinfo_add":"","contactinfo_phone":"","contactinfo_email":"support@joyfulbundles.com","social_enable":true}},"77f1ce5b-3cb5-4c8b-acb4-fe659317e8f9":{"type":"copyright","settings":{"footer_copyright":"© 2022 JoyfulBundles.com","payment_enable":true}},"842dbeb1-c149-45bd-b8b0-e94870de2757":{"type":"newsletter","disabled":true,"settings":{"newsletter_title":"Sign up for offers","newsletter_description":"Sign up for our newsletter to receive exclusive offers & discounts!","newsletter_mailchimp":true,"newsletter_form_action":"https:\/\/velatheme.us13.list-manage.com\/subscribe\/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14"}}},"block_order":["9d5128de-7cb4-462e-b529-f4cb1bf19616","3d32bd48-4a72-4f2d-a398-8de939a590e1","46f6b492-5bf9-4dd4-9bb9-87ec7bceaeee","cffe8b72-6a12-4941-925e-dde9089a46e6","77f1ce5b-3cb5-4c8b-acb4-fe659317e8f9","842dbeb1-c149-45bd-b8b0-e94870de2757"],"settings":{}},"announcement-bar":{"type":"announcement-bar","settings":{"enable":true,"full_with":false,"padding_block":"10px 0","color_bg":"#1f1f1f","color_top_text":"#ffffff","color_top_link":"#ffffff","font-size":14,"text":"<div class=\"d-flex align-items-center fw-bold\">\n    <svg class=\"icon me-2\" width=\"16\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" aria-hidden=\"true\" focusable=\"false\" style=\"-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 1056 1056\"><path fill=\"currentColor\" d=\"M1016 788q-4-4-25-18t-49-32.5l-56-37l-50-33l-28-17.5q-4-3-9.5-5t-11-3t-11.5-1q-4 0-7 .5t-6.5 1t-7.5 1.5t-7.5 2t-7 2.5t-7.5 3t-7 3.5q-19 10-91 51q-61-43-152-134q-90-90-133-151q41-73 51-91q26-50 5-83q-11-17-70.5-107T268 39q-17-24-52-24q-9 0-17.5 2t-17 5.5T165 31q-5 4-16.5 13t-37 30.5t-45.5 42t-36 45T15 204q1 42 15 88.5T68 385t53.5 91t66.5 90t71 82.5t72 75.5q59 59 118 109.5t128.5 99t141 77.5t134.5 31h1q17 0 41-16t44.5-36.5t42-45T1012 907l12-16q31-44 9-84q-7-12-17-19zm-44 65q-30 42-67 79.5T851 977q-90-5-212.5-81.5T376.5 679T160 416.5T79 205q6-17 43.5-54T202 84q2-2 4-3t4.5-1.5t5.5-.5q1 0 2 1q60 86 132 199q0 8-6 21q-2 3-5 9t-7.5 14t-10.5 18t-12.5 22t-14.5 26l-20 35l23 33q47 67 141 161t160 140l33 24l36-20q29-17 54-31.5t35-18.5q11-7 20-7h1q81 51 200 133q1 7-5 15zM660 393q7 6 16 6h13l229 1q6 0 11.5-3.5t9-9T942 376v-17q-1-11-9-17.5t-18-6.5H764l262-262q9-9 9-22t-9.5-22.5T1003 19t-23 9L718 291l1-155q0-10-7-17t-16-7h-17q-6 0-11.5 2.5t-9 7T655 133v231h1l-2 12q1 11 6 17z\"><\/path><\/svg>\n    +1-973-839-4826\n    <span class=\"mx-2 fw-light\">|<\/span>\n    <svg class=\"icon me-2\" width=\"16\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z\"><\/path><\/svg>\n    sales@joyfulbundles.com\n<\/div>","enable_country_selector":true,"text_right":"<a class=\"fw-bold\" href=\"\/pages\/contact-us\" title=\"Contact \">Contact<\/a><span class=\"mx-3\">|<\/span><a class=\"fw-bold\" href=\"\/pages\/faqs\" title=\"\">FAQs<\/a>"}}},"content_for_index":[]}}
+{
+  "current": {
+    "color_primary": "#0cb1b1",
+    "color_secondary": "#f03333",
+    "color_body_text": "#868686",
+    "color_border": "#e7e7e7",
+    "color_header_text": "#ffffff",
+    "color_header_bg": "#0cb1b1",
+    "color_footer_text": "#868686",
+    "color_footer_link": "#868686",
+    "color_footer_link_hover": "#0cb1b1",
+    "color_footer_bg": "#292a2d",
+    "color_copyright_bg": "#292a2d",
+    "color_menu_bg": "#0cb1b1",
+    "color_menu_text": "#ffffff",
+    "color_menu_text_hover": "#ffffff",
+    "color_submenu_text": "#868686",
+    "color_submenu_text_hover": "#f03333",
+    "color_btn_hover_border": "#0cb1b1",
+    "color_btn_hover_bg": "#36eded",
+    "breadcrumb_bg": "#efefef",
+    "breadcrumb_color": "#ffffff",
+    "breadcrumb_heading_color": "#ffffff",
+    "breadcrumb_color_link": "#ffffff",
+    "type_header_font": "pt_sans_narrow_n7",
+    "type_header_base_size": 36,
+    "type_body_font": "quicksand_n4",
+    "type_base_size": 16,
+    "type_special_link": "https:\/\/fonts.googleapis.com\/css2?family=Bangers&display=swap",
+    "type_special_font": "'Bangers', cursive",
+    "type_menu_size": 17,
+    "tyep_menu_dropdown_size": 15,
+    "font_icon": true,
+    "giftcard_logo": "shopify:\/\/shop_images\/favicon.png",
+    "product_reviews_enable": true,
+    "preloading": false,
+    "quickview_enable": true,
+    "quickview_proshortdesc": true,
+    "quickview_prosku": true,
+    "quickview_availability": true,
+    "quickview_protype": true,
+    "quickview_vendor": true,
+    "quickview_quantity_selector": "text",
+    "quickview_variant_selector": "radio",
+    "quickview_variant_color_enable": true,
+    "cart_type": "drawer",
+    "cart_notes_enable": true,
+    "social_twitter_link": "https:\/\/twitter.com\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/",
+    "social_instagram_link": "https:\/\/instagram.com",
+    "image_ratio": "square",
+    "crop": false,
+    "show_secondary_image": true,
+    "product_card_review": true,
+    "product_card_sale": true,
+    "product_card_available": true,
+    "product_card_new": false,
+    "product_vendor_enable": false,
+    "product_card_shortdesc": false,
+    "product_card_addtocart": true,
+    "product_card_tax": false,
+    "cookie_consent_enable": false,
+    "cookie_consent_message": "This website uses cookies to ensure you get the best experience on our website. <a class=\"text-decoration-underline\" href=\"\/policies\/privacy-policy\">Learn more<\/a>",
+    "newsletter_popup_enable": false,
+    "newsletter_popup_image": "shopify:\/\/shop_images\/breadcumd.jpg",
+    "newsletter_popup_title": "Get Our Email Letter",
+    "newsletter_title_color": "#ffffff",
+    "newsletter_popup_html": "Subscribe to the Petio mailing list to receive updates on new arrivals, special offers and other discount information.",
+    "newsletter_html_color": "#ffffff",
+    "newsletter_popup_form_action": "https:\/\/velatheme.us13.list-manage.com\/subscribe\/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-black.png",
+    "store_develop": false,
+    "cart_quantity_selector": "select",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "4d1df9b0-e83c-4939-8254-cca4200617db": {
+            "type": "menu",
+            "settings": {
+              "title": "Catalog",
+              "menu": true,
+              "menu_col": "25",
+              "menu_menu_col": "100",
+              "products": true,
+              "products_col": "25",
+              "products_title": "Superheroes Collection",
+              "products_collection": "hooded-towels",
+              "html": false,
+              "html_col": "25",
+              "html_title": "Block Html",
+              "html_content": "",
+              "banner": false,
+              "banner_col": "33",
+              "banner_link": "",
+              "collection_enable": true,
+              "collection_title": "Browse By Theme",
+              "colllection_col": "50",
+              "colllection_col_item": "25",
+              "velamenu_list_collection1": "disney",
+              "velamenu_list_collection2": "little-princess",
+              "velamenu_list_collection3": "superheroes",
+              "velamenu_list_collection4": "animals",
+              "velamenu_list_collection5": "",
+              "velamenu_list_collection6": "",
+              "velamenu_list_collection7": "",
+              "velamenu_list_collection8": "",
+              "velamenu_list_collection9": "",
+              "velamenu_list_collection10": ""
+            }
+          }
+        },
+        "block_order": [
+          "4d1df9b0-e83c-4939-8254-cca4200617db"
+        ],
+        "settings": {
+          "fullwidth": false,
+          "padding_block": "10px 0",
+          "logo_width": 240,
+          "logo_position": "left",
+          "menu": "main-menu",
+          "enable_sticky_header": false,
+          "menu_text": "Free shipping on orders over $50"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "9d5128de-7cb4-462e-b529-f4cb1bf19616": {
+            "type": "link_list",
+            "settings": {
+              "title": "Products",
+              "menu": "footer"
+            }
+          },
+          "3d32bd48-4a72-4f2d-a398-8de939a590e1": {
+            "type": "link_list",
+            "settings": {
+              "title": "Themes",
+              "menu": "themes"
+            }
+          },
+          "46f6b492-5bf9-4dd4-9bb9-87ec7bceaeee": {
+            "type": "link_list",
+            "settings": {
+              "title": "Information",
+              "menu": "information"
+            }
+          },
+          "cffe8b72-6a12-4941-925e-dde9089a46e6": {
+            "type": "contact_info",
+            "settings": {
+              "contactinfo_heading": "Contact Us",
+              "logo_width": 160,
+              "contactinfo_desc": "If you have any question, please contact us:",
+              "contactinfo_add": "",
+              "contactinfo_phone": "",
+              "contactinfo_email": "support@joyfulbundles.com",
+              "social_enable": true
+            }
+          },
+          "77f1ce5b-3cb5-4c8b-acb4-fe659317e8f9": {
+            "type": "copyright",
+            "settings": {
+              "footer_copyright": "© 2022 JoyfulBundles.com",
+              "payment_enable": true
+            }
+          },
+          "842dbeb1-c149-45bd-b8b0-e94870de2757": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "newsletter_title": "Sign up for offers",
+              "newsletter_description": "Sign up for our newsletter to receive exclusive offers & discounts!",
+              "newsletter_mailchimp": true,
+              "newsletter_form_action": "https:\/\/velatheme.us13.list-manage.com\/subscribe\/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14"
+            }
+          }
+        },
+        "block_order": [
+          "9d5128de-7cb4-462e-b529-f4cb1bf19616",
+          "3d32bd48-4a72-4f2d-a398-8de939a590e1",
+          "46f6b492-5bf9-4dd4-9bb9-87ec7bceaeee",
+          "cffe8b72-6a12-4941-925e-dde9089a46e6",
+          "77f1ce5b-3cb5-4c8b-acb4-fe659317e8f9",
+          "842dbeb1-c149-45bd-b8b0-e94870de2757"
+        ],
+        "settings": {
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "enable": true,
+          "full_with": false,
+          "padding_block": "10px 0",
+          "color_bg": "#1f1f1f",
+          "color_top_text": "#ffffff",
+          "color_top_link": "#ffffff",
+          "font-size": 14,
+          "text": "<div class=\"d-flex align-items-center fw-bold\">\n    <svg class=\"icon me-2\" width=\"16\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" aria-hidden=\"true\" focusable=\"false\" style=\"-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 1056 1056\"><path fill=\"currentColor\" d=\"M1016 788q-4-4-25-18t-49-32.5l-56-37l-50-33l-28-17.5q-4-3-9.5-5t-11-3t-11.5-1q-4 0-7 .5t-6.5 1t-7.5 1.5t-7.5 2t-7 2.5t-7.5 3t-7 3.5q-19 10-91 51q-61-43-152-134q-90-90-133-151q41-73 51-91q26-50 5-83q-11-17-70.5-107T268 39q-17-24-52-24q-9 0-17.5 2t-17 5.5T165 31q-5 4-16.5 13t-37 30.5t-45.5 42t-36 45T15 204q1 42 15 88.5T68 385t53.5 91t66.5 90t71 82.5t72 75.5q59 59 118 109.5t128.5 99t141 77.5t134.5 31h1q17 0 41-16t44.5-36.5t42-45T1012 907l12-16q31-44 9-84q-7-12-17-19zm-44 65q-30 42-67 79.5T851 977q-90-5-212.5-81.5T376.5 679T160 416.5T79 205q6-17 43.5-54T202 84q2-2 4-3t4.5-1.5t5.5-.5q1 0 2 1q60 86 132 199q0 8-6 21q-2 3-5 9t-7.5 14t-10.5 18t-12.5 22t-14.5 26l-20 35l23 33q47 67 141 161t160 140l33 24l36-20q29-17 54-31.5t35-18.5q11-7 20-7h1q81 51 200 133q1 7-5 15zM660 393q7 6 16 6h13l229 1q6 0 11.5-3.5t9-9T942 376v-17q-1-11-9-17.5t-18-6.5H764l262-262q9-9 9-22t-9.5-22.5T1003 19t-23 9L718 291l1-155q0-10-7-17t-16-7h-17q-6 0-11.5 2.5t-9 7T655 133v231h1l-2 12q1 11 6 17z\"><\/path><\/svg>\n    +1-973-839-4826\n    <span class=\"mx-2 fw-light\">|<\/span>\n    <svg class=\"icon me-2\" width=\"16\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 512 512\"><path fill=\"currentColor\" d=\"M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z\"><\/path><\/svg>\n    sales@joyfulbundles.com\n<\/div>",
+          "enable_country_selector": true,
+          "text_right": "<a class=\"fw-bold\" href=\"\/pages\/contact-us\" title=\"Contact \">Contact<\/a><span class=\"mx-3\">|<\/span><a class=\"fw-bold\" href=\"\/pages\/faqs\" title=\"\">FAQs<\/a>"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
