@@ -1,0 +1,41 @@
+
+<div class="footer-info--logo mb-2">
+	{%- assign mw_logo = block.settings.logo_width | append: 'px' -%}
+	<a href="/" itemprop="url" style="max-width: {{mw_logo}};">
+		{%- if block.settings.contactinfo_logo != blank  -%}
+			{%- assign image_size = block.settings.logo_width | append: 'x' -%}
+			<img srcset="{{ block.settings.contactinfo_logo | img_url: image_size }} 1x, {{ block.settings.contactinfo_logo | img_url: image_size, scale: 2 }} 2x"
+			src="{{ block.settings.contactinfo_logo | img_url: image_size }}"
+			loading="lazy"
+			class="img-fluid"
+			alt="{{ block.settings.logo.alt | default: shop.name | escape }}" >
+		{%- endif -%}
+	</a>
+</div>
+{% if contactinfoDesc != blank %}
+	<div class="footer-info--desc mb-3 pb-2">{{ contactinfoDesc }}</div>
+{% endif %}
+{% if contactinfoAdd != blank %}
+	<div class="footer-info--address mb-3 d-flex fw-bold align-items-center">
+		<i class="icons me-3">
+			{% include 'icons', icon: 'map-marker' %}
+		</i>
+		{{ contactinfoAdd }}
+	</div>
+{% endif %}		
+{% if contactinfoPhone != blank %}
+	<div class="footer-info--phone mb-3 d-flex fw-bold align-items-center">
+		<i class="icons me-3">
+			{% include 'icons', icon: 'phone' %}
+		</i>
+		{{ contactinfoPhone }}
+	</div>
+{% endif %}		
+{% if contactinfoEmail != blank %}
+	<div class="footer-info--email mb-3 d-flex fw-bold align-items-center">
+		<i class="icons me-3">
+			{% include 'icons', icon: 'email' %}
+		</i>
+		{{ contactinfoEmail }}
+	</div>
+{% endif %}

@@ -1,0 +1,108 @@
+{%- if product_style == 'list'  -%}
+	{%- for i in (1..4) -%}
+		<div class="product-card product-list-style d-flex {% if strGridItem %}{{ strGridItem }}{% else %}slick-carousel__item{% endif %}">
+			<div class="product-card__image-wrapper">
+				<a class="product-card__image-link" href="/admin/products">
+					{% capture current %}{% cycle 1, 2, 3, 4 %}{% endcapture %}
+					{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+				</a>
+			</div>
+			<div class="product-card__content position-relative">
+				<div class="product-card__name fw-bold">
+					<a href="/admin/products">Purina Pro Plan Focus Sensitive Skin</a>
+				</div>
+				<div class="product-card__price">
+					<div class="product-group-price">
+						<div class="product-price">$29.99</div>
+					</div>
+				</div>
+				<div class="product-card__buttons d-none">
+					<div class="product-card__form">
+						<a class="btn btn--add-to-cart" href="/admin/products">
+							{% include 'icons', icon: 'shopping-bag' %}
+							<span>{{ 'products.product.add_to_cart' | t }}</span>
+						</a>
+					</div>
+					{%- if settings.quickview_enable -%}
+						<div class="product-card__quickview">
+							<a class="btn btn--quickview" href="/admin/products">
+								{% include 'svg-definitions' with 'search-thin' %}
+								<span>{{ 'products.product.quickview' | t }}</span>
+							</a>
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	{%- endfor -%}
+{%- else -%}
+	{%- assign prostyle = prostyle | default: "default" -%}	
+	{%- for i in (1..8) -%}
+		{%- if prostyle == "style1" -%}
+			<div class="product-card product-grid product-{{ prostyle }} {% if strGridItem %}{{ strGridItem }}{% else %}slick-carousel__item{% endif %}">
+				<div class="product-card__image-wrapper">
+					<a class="product-card__image-link" href="/admin/products">
+						{% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+						{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+					</a>
+				</div>
+				<div class="product-card__content position-relative">
+					{%- if settings.product_vendor_enable -%}
+						<p class="product-card__vendor">Demo Vendor</p>
+					{%- endif -%}
+					<div class="product-card__name fw-bold">
+						<a href="/admin/products">Purina Pro Plan Focus Sensitive Skin & Stomach Salmon</a>
+					</div>
+					<div class="product-card__price">
+						<div class="product-group-price">
+							<div class="product-price">$29.99</div>
+						</div>
+					</div>
+					{%- if short_description != blank -%}
+						<div class="product-card__summary">{{ short_description }}</div>
+					{%- endif -%}
+					{%- if settings.product_card_addtocart -%}
+						<div class="product-card__form mt-3">
+							<a class="btn btn--add-to-cart btn-default" href="/admin/products">
+								{% include 'icons', icon: 'shopping-bag', class: 'd-none' %}
+								<span>{{ 'products.product.add_to_cart' | t }}</span>
+							</a>
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+		{%- else -%}
+			<div class="product-card product-grid text-center product-{{ prostyle }} {% if strGridItem %}{{ strGridItem }}{% else %}slick-carousel__item{% endif %}">
+				<div class="product-card__image-wrapper">
+					<a class="product-card__image-link" href="/admin/products">
+						{% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+						{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+					</a>
+					{%- if settings.product_card_addtocart -%}
+						<div class="product-card__buttons">
+							<div class="product-card__form">
+								<a class="btn btn--add-to-cart" href="/admin/products">
+									{% include 'icons', icon: 'shopping-bag' %}
+									<span class="d-none">{{ 'products.product.add_to_cart' | t }}</span>
+								</a>
+							</div>
+						</div>
+					{%- endif -%}
+				</div>
+				<div class="product-card__content position-relative">
+					{%- if settings.product_vendor_enable -%}
+						<p class="product-card__vendor">Demo Vendor</p>
+					{%- endif -%}
+					<div class="product-card__name fw-bold">
+						<a href="/admin/products">Purina Pro Plan Focus Sensitive Skin & Stomach Salmon</a>
+					</div>
+					<div class="product-card__price">
+						<div class="product-group-price">
+							<div class="product-price">$29.99</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{%- endif -%}
+	{%- endfor -%}
+{%- endif -%}

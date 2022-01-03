@@ -1,0 +1,132 @@
+{%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+    {%- capture bgColor -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.padding_block != blank -%}
+    {%- capture paddingblock -%}
+        padding: {{section.settings.padding_block}};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.margin_block != blank -%}
+    {%- capture marginblock -%}
+        margin: {{section.settings.margin_block}};
+    {%- endcapture -%}
+{%- endif -%}
+<div class="vela-section page-contact_form lazyload js" style="{{ bgColor}} {{ paddingblock }} {{ marginblock }} background-position: right center; background-size: cover;"
+{%- if section.settings.contact-form-bg -%}
+	{% unless section.settings.contact-form-bg.alt == blank %}
+	role="img"
+	aria-label="{{ section.settings.contact-form-bg.alt | escape }}"
+	data-alt="{{ section.settings.contact-form-bg.alt | escape }}"
+	{% endunless %}
+	data-bg="{{ section.settings.contact-form-bg | img_url: 'master' }}"
+	data-bgset="{% include 'bgset', image: section.settings.contact-form-bg %}"
+	data-sizes="auto"
+	data-parent-fit="cover"
+{%- endif -%}>
+    <div class="container">
+        <div class="row justify-content-end  py-4 py-md-5">
+            <div class="col-12 col-xl-8 col-xxl-6 contact-form">
+				{%- if section.settings.heading != blank -%}
+					<h2 class="contact-form__title mb-4">
+						{{ section.settings.heading}}
+					</h2>
+				{%- endif -%}
+                <div class="contact-form__content">
+                    {%- form 'contact', id: 'ContactForm' -%}
+						{%- if form.posted_successfully? -%}
+							<div class="alert-success alert alert-success" autofocus>
+								{{ 'templates.contact.form.post_success' | t }}
+							</div>
+						{%- elsif form.errors -%}
+							<div class="alert-error alert alert-danger alert-dismissible fade show" autofocus>
+								{{ form.errors | default_errors }}
+								<button type="button" data-dismiss="alert" aria-hidden="true" data-bs-dismiss="alert" aria-label="Close" class="btn-close"></button>
+							</div>
+						{%- endif -%}
+                        <div class="row g-3">
+                            <div class="col">
+                                <input class="form-control" placeholder="{{ 'templates.contact.form.name' | t }}" type="text" id="{{ formId }}-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
+                            </div>
+                            <div class="col mb-3">
+                                <input class="form-control"
+                                    placeholder="{{ 'templates.contact.form.email' | t }}"
+                                    type="email"
+                                    id="{{ formId }}-email"
+                                    name="contact[email]"
+                                    autocorrect="off"
+                                    autocapitalize="off"
+                                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                    aria-required="true"
+                                    required
+                                    >
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col">
+                                <textarea class="form-control" placeholder="{{ 'templates.contact.form.comment' | t }}" rows="10" id="{{ formId }}-message" name="contact[{{ 'templates.contact.form.comment' | t }}]" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default rounded-2 lh-base w-100 text-uppercase">{{ 'templates.contact.form.send' | t }}</button>
+                    {% endform %}
+                </div>
+            </div>
+		</div>
+    </div>
+</div>
+{% schema %}
+  	{
+        "name": "Contact Form",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Design Section"
+            },
+            {
+                "type": "checkbox",
+                "id": "full_with",
+                "label": "Enabel Full Width?"
+            },
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background Color",
+                "default": "rgba(0,0,0,0)"
+            },
+			{
+                "type": "image_picker",
+                "id": "contact-form-bg",
+                "label": "Background image"
+            },
+            {
+                "type": "text",
+                "id": "padding_block",
+                "label": "Padding",
+                "placeholder": "0px 0px",
+                "info": "Ex: 0px 0px 0px 0px and use desktop only"
+            },
+            {
+                "type": "text",
+                "id": "margin_block",
+                "label": "Margin",
+                "placeholder": "0px 0px",
+                "default": "0 0 30px",
+                "info": "Ex: 0px 0px 30px 0px"
+            },
+			{
+				"type": "text",
+				"id": "heading",
+				"default": "Contact form",
+				"label": "Heading"
+			}
+		],
+        "presets": [
+            {
+                "name": "Contact Form",
+                "category": "4. element"
+            }
+        ]
+  	}
+{% endschema %}

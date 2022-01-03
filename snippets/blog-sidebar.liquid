@@ -1,0 +1,161 @@
+<div class="offcanvas-body pb-0 p-xl-0">
+    <div class="d-block d-xl-none {% if sidebarPosition == 'sidebar_right' %}text-end{% endif %}">
+        <a class="btn btn-sidebar btn-sidebar--close position-relative {{sidebarPosition}}"  data-bs-toggle="offcanvas" href="#{{sidebarPosition}}" role="button" aria-controls="{{sidebarPosition}}">
+            {% render 'icons', icon: 'close' %}
+        </a>
+    </div>
+    <div class="blog-sidebar--inner">
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'search'-%}
+                    <div class="blog-search mb-4 mb-xl-5">
+                        {%- if block.settings.search_title != blank -%}
+                            <h4 class="block-sidebar__title">{{ block.settings.search_title }}</h4>
+                        {%- endif -%}
+                        <div class="block-sidebar__content position-relative">
+                            <form action="{{ routes.search_url }}" method="get" class="blog-search__form" role="search">
+                                <input type="hidden" name="type" value="article" />
+                                <div class="input-group">
+                                    <input class="form-control blog-search__input"
+                                        type="search"
+                                        name="q"
+                                        value="{{ search.terms | escape }}"
+                                        placeholder="{{ 'general.search.search-blog' | t }}"
+                                        aria-label="{{ 'general.search.search-blog' | t }}">
+                                    <button type="submit" class="btn blog-search__btn">
+                                        {% include 'icons', icon: 'search' %}
+                                        <span class="d-none">{{ 'general.search.submit' | t }}</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                {%- when 'categories'-%}
+                    <div  class="blog-categories mb-4 mb-xl-5">
+                        {%- if block.settings.categories_title != blank -%}
+                            <h4 class="block-sidebar__title">{{ block.settings.categories_title }}</h4>
+                        {%- endif -%}
+                        <div class="block-sidebar__content position-relative">
+                            <div class="blog-categories__list">
+                                {%- for block in section.blocks -%}
+                                    {%- if block.settings.categories_handle != blank -%}
+                                        {%- assign blogHandle = block.settings.categories_handle -%}
+                                        {%- if linklists[blogHandle] != empty -%}
+                                            <ul class="sidebarListCategories m-0 list-unstyled">
+                                                {% for linkItem in linklists[blogHandle].links %}
+                                                    {%- assign hasDropdown = false -%}
+                                                    {%- assign subItem = forloop.index -%}
+                                                    {%- if linklists[linkItem.handle] != empty -%}
+                                                        {%- assign hasDropdown = true -%}
+                                                    {%- endif -%}
+                                                    <li class="sidebarBlogCateItem">
+                                                        <a {% if linkItem.active %} class="active" {% endif %} href="{{ linkItem.url }}">{{ linkItem.title }}</a>
+                                                        {%- if hasDropdown -%}
+                                                            <span class="arrow collapsed" data-bs-toggle="collapse" data-bs-target="#subCategory{{ forloop.index }}" aria-expanded="false"  aria-controls="#subCategory{{ forloop.index }}">
+                                                                {% render 'icons', icon: 'caret', class: 'icon icon-caret' %}
+                                                            </span>
+                                                            <div id="subCategory{{ forloop.index }}" class="collapse">
+                                                                <ul class="sidebarListCategories subListCategories m-0 list-unstyled">
+                                                                    {% for linkChildItem in linklists[linkItem.handle].links %}
+                                                                        {%- assign hasDropdown = false -%}
+                                                                        {%- if linklists[linkChildItem.handle] != empty -%}
+                                                                            {%- assign hasDropdown = true -%}
+                                                                        {%- endif -%}
+                                                                        <li class="sidebarBlogCateItem">
+                                                                            <a  {% if linkChildItem.active %} class="active" {% endif %} href="{{ linkChildItem.url }}">{{ linkChildItem.title }}</a>
+                                                                            {%- if hasDropdown -%}
+                                                                                <span class="arrow collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#subCategory{{ subItem }}{{ forloop.index }}" aria-controls="#subCategory{{ subItem }}{{ forloop.index }}">
+                                                                                    {% render 'icons', icon: 'caret', class: 'icon icon-caret' %}
+                                                                                </span>
+                                                                                <div id="subCategory{{ subItem }}{{ forloop.index }}" class="collapse">
+                                                                                    <ul class="sidebarListCategories subListCategories m-0 list-unstyled">
+                                                                                        {% for linkChildItem2 in linklists[linkChildItem.handle].links %}
+                                                                                            <li class="sidebarBlogCateItem">
+                                                                                                <a href="{{ linkChildItem2.url }}">{{ linkChildItem2.title }}</a>
+                                                                                            </li>
+                                                                                        {% endfor %}
+                                                                                    </ul>
+                                                                                </div>
+                                                                            {%- endif -%}
+                                                                        </li>
+                                                                    {% endfor %}
+                                                                </ul>
+                                                            </div>
+                                                        {%- endif -%}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {%- endif -%}
+                                    {%- endif -%}
+                                {%- endfor-%}
+                            </div>
+                        </div>
+                    </div>
+                {%- when 'relatedarticles'-%}
+                    {%- assign heading = block.settings.relatedarticles_title | escape -%}
+                    {%- assign limit = block.settings.relatedarticles_limit -%}
+                    <div class="related-artibles mb-4 mb-xl-5">
+                        <h4 class="related-artibles__title block-sidebar__title">{{ heading }}</h4>
+                        <div class="block-sidebar__content related-artibles__content position-relative">
+                            <ul class="related-artibles__list">
+                                {% for article in blogs[blog.handle].articles limit:limit %}
+                                <li class="related-artibles__item">
+                                    <div class="related-artibles__card d-flex">
+                                    {%- if article.image -%}
+                                        <div class="related-artibles__card-image">
+                                            <a href="{{ article.url }}">
+                                                {% include 'img-global', image: article.image, image_size: '70x70', image_square: true, crop: 'center' %}
+                                            </a>
+                                        </div>
+                                    {%- endif -%}
+                                    <div class="related-artibles__card-content">
+                                        <time class="text-uppercase" datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+                                        {{ article.published_at | date: format: 'date' }}
+                                        </time>
+                                        <a class="font-bold" href="{{ article.url }}">{{ article.title }}</a>
+                                    </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {%- when 'banner'-%}
+                    {%- assign url = block.settings.banner_url -%}
+                    {%- assign image = block.settings.banner_img -%}
+                    {%- if image -%}
+                        <div class="blog-banner mb-4 mb-xl-5">
+                            <a href="{{ url }}" title="{{ image.alt | default: shop.name }}">
+                                {% include 'img-global', image: image %}
+                            </a>
+                        </div>
+                    {%- endif -%}
+                {%- when 'tags'-%}
+                    {%- assign limit = block.settings.tags_limit -%}
+                    <div class="blog-tags mb-4 mb-xl-5">
+                        {%- if block.settings.tags_title != blank -%}
+                            <h4 class="blog-tags__title block-sidebar__title">{{ block.settings.tags_title }}</h4>
+                        {%- endif -%}
+                        <div class="block-sidebar__content blog-tags__content position-relative">
+                            <ul class="blog-tags__list">
+                                {% for tag in blog.all_tags limit:limit %}
+                                    <li class="blog-tags__item">{{ tag | link_to_tag: tag }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {%- when 'html'-%}
+                    <div class="blog-html mb-4 mb-xl-5">
+                        {%- if block.settings.html_title != blank -%}
+                            <h4 class="blog-tags__title block-sidebar__title">{{ block.settings.html_title }}</h4>
+                        {%- endif -%}
+                        <div class="block-sidebar__content blog-html__content">
+                            <div class="rte">
+                                {{ block.settings.html_content }}    
+                            </div>
+                        </div>
+                    </div>
+            {%- endcase -%}
+        {%- endfor -%}
+    </div>
+</div>

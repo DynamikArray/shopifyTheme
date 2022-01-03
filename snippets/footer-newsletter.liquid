@@ -1,0 +1,57 @@
+<div class="footer-newsletter" >
+	<div class="footer-newsletter-inner">
+		<div class="row align-items-center">
+			<div class="group-heading col-12 col-md-5 mb-gutter">
+				{% if newsletterTitle != blank %}
+					<h3 class="footer-newsletter--title">{{ newsletterTitle }}</h3>
+				{% endif %}
+				{% if newsletterDesc != blank %}
+					<div class="footer-newsletter--desc">{{ newsletterDesc }}</div>
+				{% endif %}
+			</div>
+			<div class="footer-newsletter-content col-12 col-md-7 mb-gutter">
+				{% if newsletterMailchimp %}
+					{%- assign form_action = block.settings.newsletter_form_action | replace: '/post?', '/post-json?' | append: '&amp;c=?' -%}
+					<form action="{{ form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="js-vela-newsletter formNewsletter clearfix">			
+						<div class="input-group">
+							<input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'newsletter.newsletter_email' | t }}" name="EMAIL" id="mail" class="js-input-newsletter form-control" aria-label="{{ 'newsletter.newsletter_email' | t }}" aria-describedby="btn-newsletter" required>						
+							<span class="btn p-0">
+								<button class=" btn--newsletter" type="submit">
+									<span class="text">{{ 'newsletter.submit' | t }}</span>
+									<i class="icons">{% include 'icons', icon: 'email' %}</i>
+								</button>
+							</span>
+							
+						</div>
+					</form>
+				{% else %}
+					{% form 'customer' %}
+						{%- if form.errors -%}
+							<div class="alert-error alert alert-danger alert-dismissible fade show">
+								{{ form.errors | default_errors }}
+								<button type="button" data-dismiss="alert" aria-hidden="true" data-bs-dismiss="alert" aria-label="Close" class="btn-close"></button>
+							</div>
+						{%- endif -%}
+						{%- if form.posted_successfully? -%}
+							<div class="alert-success alert alert-success">
+								{{ 'newsletter.newsletter_confirmation' | t }}
+							</div>
+						{%- else -%}
+							<div class="input-group">
+								<input class="form-control" id="newsletter-input" type="email" name="contact[email]" placeholder="{{ 'newsletter.newsletter_email' | t }}" required aria-describedby="btn-newsletter">
+								<span class="btn p-0">
+									<button class="btn btn--newsletter" type="submit" aria-label="Center Align">
+										<span class="text">{{ 'newsletter.submit' | t }}</span>
+										<i class="icons">{% include 'icons', icon: 'email' %}</i>
+									</button>
+								</span>
+								
+							</div>
+							<input type="hidden" name="action" value="0">
+						{%- endif -%}
+					{% endform %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>

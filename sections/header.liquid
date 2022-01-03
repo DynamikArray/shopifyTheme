@@ -1,0 +1,578 @@
+
+
+{%- assign header_white = false -%}
+
+<header class="header">
+	<div data-section-id="header" data-section-type="header-section" class="header-wrap {% if section.settings.enable_sticky_header %}sticky-header{% endif %}">
+		<div class="container{%if section.settings.fullwidth %}-fluid{% endif %}">
+			<div class="header__inner logo-{{ section.settings.logo_position }}"{% if section.settings.padding_block != blank %} style="padding: {{ section.settings.padding_block }};"{% endif %}>
+				<div class="row align-items-center justify-content-between">
+					<div class="header-menu-mobile d-block d-lg-none{% if section.settings.logo_position== 'left' %} col-auto{% else %} col{% endif %}">
+						{%- if section.settings.menu != blank -%}
+							{%- render 'header-menu-mobile' -%}
+						{%- endif -%}
+					</div>
+					{%- assign mw_logo = section.settings.logo_width | plus: 30 | append: 'px' -%}
+					<div class="header-left px-0 px-sm-3 text-center col {% if section.settings.logo_position == 'left' %}col-lg-auto{% endif %}" style="max-width: {{ mw_logo }}">
+						{%- if request.page_type == 'index' -%}
+						<h1 class="header__heading mb-0">
+						{%- endif -%}
+							<a href="{{ routes.root_url }}" class="header__heading-link">
+								{%- if section.settings.logo != blank -%}
+									{%- assign logo_size = section.settings.logo_width | append: 'x' -%}
+									<img class="header__heading-logo img-fluid" srcset="{{ section.settings.logo | img_url: logo_size }} 1x, {{ section.settings.logo | img_url: logo_size, scale: 2 }} 2x"
+									src="{{ section.settings.logo | img_url: logo_size }}"
+									loading="lazy"
+									alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+									>
+									{% if section.settings.header_white and section.settings.logo_white != blank  %}
+										<img class="header__heading-logo logo-white img-fluid" srcset="{{ section.settings.logo_white | img_url: logo_size }} 1x, {{ section.settings.logo_white | img_url: logo_size, scale: 2 }} 2x"
+										src="{{ section.settings.logo_white | img_url: logo_size }}"
+										loading="lazy"
+										alt="{{ section.settings.logo_white.alt | default: shop.name | escape }}"
+										>
+									{% endif %}
+
+								{%- else -%}
+								<span class="h2">{{ shop.name }}</span>
+								{%- endif -%}
+							</a>
+						{%- if request.page_type == 'index' -%}
+						</h1>
+						{%- endif -%}
+					</div>
+					<div class="header-center col {% if section.settings.logo_position == 'left' %} ms-xl-4{% endif %}">
+						{%- render 'header-search' -%}
+					</div>
+					<div class="header-right d-flex align-items-center col {% if section.settings.logo_position == 'left' %}col-auto{% endif %}">
+						<div class="header__search d-block d-lg-none">
+							<a  class="header__icon header__icon--search modal__toggle" href="#searchTop" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="searchTop">
+								<span>
+									{% render 'icons', icon: 'search', class: 'modal__toggle-open icon icon-search' %}
+								</span>
+							</a>
+						</div>
+						{%- if shop.customer_accounts_enabled -%}
+							<a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account ms-3 d-none d-lg-block">
+								{% render 'icons', icon: 'user', class: "icon icon-user" %}
+							</a>
+						{%- endif -%}
+						{%- include 'header-cart' -%}
+					</div>
+				</div>
+			</div>
+			<div class="vela-header-menu position-relative d-lg-block d-none">
+				<div class="main-menu rounded-pill d-flex flex-wrap justify-content-between align-items-center">
+					{%- if section.settings.menu != blank -%}
+						{%- include 'header-menu' -%}
+					{%- endif -%}
+					{%- if section.settings.menu_text != blank -%}
+						<div class="text_right">
+							{{ section.settings.menu_text }}
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "Organization",
+	  "name": {{ shop.name | json }},
+	  {% if section.settings.logo %}
+	  	{%- assign logo_size = section.settings.logo_width | append: 'x' -%}
+		"logo": {{ section.settings.logo | img_url: logo_size | prepend: "https:" | json }},
+	  {% endif %}
+	  "sameAs": [
+		{{ settings.social_twitter_link | json }},
+		{{ settings.social_facebook_link | json }},
+		{{ settings.social_pinterest_link | json }},
+		{{ settings.social_instagram_link | json }},
+		{{ settings.social_tiktok_link | json }},
+		{{ settings.social_tumblr_link | json }},
+		{{ settings.social_snapchat_link | json }},
+		{{ settings.social_youtube_link | json }},
+		{{ settings.social_vimeo_link | json }}
+	  ],
+	  "url": {{ shop.url | append: page.url | json }}
+	}
+  </script>
+  
+  {%- if request.page_type == 'index' -%}
+	{% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
+	<script type="application/ld+json">
+	  {
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"name": {{ shop.name | json }},
+		"potentialAction": {
+		  "@type": "SearchAction",
+		  "target": {{ potential_action_target | json }},
+		  "query-input": "required name=search_term_string"
+		},
+		"url": {{ shop.url | append: page.url | json }}
+	  }
+	</script>
+  {%- endif -%}
+{% schema %}
+{
+  	"name": "Header",
+  	"settings": [
+		{
+			"type": "checkbox",
+			"id": "fullwidth",
+			"label": "Full width?",
+			"default": true
+		},
+		{
+			"type": "text",
+			"id": "padding_block",
+			"label": "Padding",
+			"info": "Ex: 0px 0px 0px 0px"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo",
+			"label": "Logo black"
+		},
+		{
+			"type": "range",
+			"id": "logo_width",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "px",
+			"label": "Custom logo width"
+		},
+		{
+			"type": "select",
+			"id": "logo_position",
+			"label": "Logo position",
+			"default": "left",
+			"options": [
+				{
+					"value": "left",
+					"label": "Left"
+				},
+				{
+					"value": "center",
+					"label": "Center"
+				}
+			]
+		},
+		{
+			"type": "link_list",
+			"id": "menu",
+			"default": "main-menu",
+			"label": "Main menu"
+		},
+		{
+			"type": "checkbox",
+			"id": "enable_sticky_header",
+			"default": true,
+			"label": "Enable sticky header",
+			"info": "Header shows on the screen as customers scroll up."
+		},
+		{
+			"type": "textarea",
+			"id": "menu_text",
+			"label": "Text",
+			"default": "Free shipping on orders over $50"
+		}
+  	],
+  	"blocks": [
+    	{
+			"type": "menu",
+			"name": "Megamenu Item",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Menu item name",
+					"info": "Menu item of main-menu. Menu item has dropdown megamenu."
+				},
+				{
+					"type": "header",
+					"content": "1. Block navigation",
+					"info": "Admin -> Navigation -> Menu"
+				},
+				{
+					"type": "checkbox",
+					"id": "menu",
+					"label": "Enable"
+				},
+				{
+					"type": "select",
+					"id": "menu_col",
+					"label": "Block width",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "66",
+							"label": "66%"
+						},
+						{
+							"value": "75",
+							"label": "75%"
+						},
+						{
+							"value": "80",
+							"label": "80%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "select",
+					"id": "menu_menu_col",
+					"label": "Width of each menu",
+					"options": [
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "header",
+					"content": "2. Block products"
+				},
+				{
+					"type": "checkbox",
+					"id": "products",
+					"label": "Enable"
+				},
+				{
+					"type": "select",
+					"id": "products_col",
+					"label": "Block width",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "66",
+							"label": "66%"
+						},
+						{
+							"value": "75",
+							"label": "75%"
+						},
+						{
+							"value": "80",
+							"label": "80%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "text",
+					"id": "products_title",
+					"label": "Heading"
+				},
+				{
+					"type": "collection",
+					"id": "products_collection",
+					"label": "Collection"
+				},
+				{
+					"type": "header",
+					"content": "3. Block html"
+				},
+				{
+					"type": "checkbox",
+					"id": "html",
+					"label": "Enable"
+				},
+				{
+					"type": "select",
+					"id": "html_col",
+					"label": "Block width",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "66",
+							"label": "66%"
+						},
+						{
+							"value": "75",
+							"label": "75%"
+						},
+						{
+							"value": "80",
+							"label": "80%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "text",
+					"id": "html_title",
+					"label": "Heading"
+				},
+				{
+					"type": "html",
+					"id": "html_content",
+					"label": "Content HTML",
+					"info": "You can input HTML code, img tag, video code, ..."
+				},
+				{
+					"type": "header",
+					"content": "4. Block banner"
+				},
+				{
+					"type": "checkbox",
+					"id": "banner",
+					"label": "Enable"
+				},
+				{
+					"type": "select",
+					"id": "banner_col",
+					"label": "Block width",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "66",
+							"label": "66%"
+						},
+						{
+							"value": "75",
+							"label": "75%"
+						},
+						{
+							"value": "80",
+							"label": "80%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Banner image"
+				},
+				{
+					"type": "url",
+					"id": "banner_link",
+					"label": "Banner URL"
+				},
+				{
+					"type": "header",
+					"content": "5. Collection list"
+				},
+				{
+					"type": "checkbox",
+					"id": "collection_enable",
+					"label": "Enable"
+				},
+				{
+					"type": "text",
+					"id": "collection_title",
+					"label": "Block Title"
+				},
+				{
+					"type": "select",
+					"id": "colllection_col",
+					"label": "Block width",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "66",
+							"label": "66%"
+						},
+						{
+							"value": "75",
+							"label": "75%"
+						},
+						{
+							"value": "80",
+							"label": "80%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+					"type": "select",
+					"id": "colllection_col_item",
+					"label": "Width of item",
+					"options": [
+						{
+							"value": "20",
+							"label": "20%"
+						},
+						{
+							"value": "25",
+							"label": "25%"
+						},
+						{
+							"value": "33",
+							"label": "33%"
+						},
+						{
+							"value": "50",
+							"label": "50%"
+						},
+						{
+							"value": "100",
+							"label": "100%"
+						}
+					]
+				},
+				{
+				   "type": "collection",
+				   "id": "velamenu_list_collection1",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection2",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection3",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection4",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection5",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection6",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection7",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection8",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection9",
+				   "label": "Select Collection"
+				 },
+				 {
+				   "type": "collection",
+				   "id": "velamenu_list_collection10",
+				   "label": "Select Collection"
+				 }
+			]
+		}
+  	]
+}
+{% endschema %}

@@ -1,0 +1,116 @@
+<li class="main-menu__nav-item menu-dropdown{% if menu_link.active %} active{% endif %}">
+	<a href="{{ menu_link.url }}" title="{{ menu_link.title | escape }}">{{ menu_link.title }} {% render 'icons', icon: 'caret' %}</a>
+	<div class="menu-dropdown__content menu-dropdown__content--megamenu">
+		<div class="menu-row row">
+			{%- if block.settings.menu -%}
+				{%- if menu_link.links != blank -%}
+				<div class="menu-row__col menu-row__col--{{ block.settings.menu_col }}">
+					<div class="menu-row row">
+					{%- for menu_link1 in menu_link.links -%}
+						<div class="menu-row__col menu-row__col--{{ block.settings.menu_menu_col }}">
+						<ul class="megamenu-links list-unstyled">
+							<li class="megamenu-links__item megamenu-heading{% if menu_link1.active %} active{% endif %}">
+							<a class="megamenu-links__link" href="{{ menu_link1.url }}" title="{{ menu_link1.title | escape }}">{{ menu_link1.title }}</a>
+							</li>
+							{%- for menu_link2 in menu_link1.links -%}
+							<li class="megamenu-links__item{% if menu_link2.active %} active{% endif %}">
+								<a class="megamenu-links__link" href="{{ menu_link2.url }}" title="{{ menu_link2.title | escape }}">{{ menu_link2.title }}</a>
+							</li>
+							{%- endfor -%}
+						</ul>
+						</div>
+					{%- endfor -%}
+					</div>
+				</div>
+				{%- endif -%}
+			{%- endif -%}
+			{%- if block.settings.products -%}
+				<div class="menu-row__col menu-row__col--{{ block.settings.products_col }}">
+				{%- assign block_title = block.settings.products_title -%}
+				{%- assign collection_handle = block.settings.products_collection -%}
+				<div class="megamenu-products">
+					{%- if block_title != blank -%}
+					<div class="megamenu-products__heading megamenu-heading"><span>{{ block_title }}</span></div>
+					{%- endif -%}
+					<div class="megamenu-products__list">
+					{%- for product in collections[collection_handle].products limit:3 -%}
+						{%- assign on_sale = false -%}
+						{%- if product.compare_at_price > product.price -%}
+						{%- assign on_sale = true -%}
+						{%- endif -%}
+						<div class="product-menu">
+						<div class="product-menu__image">
+							<a class="product-menu__image-link" href="{{ product.url }}" title="">
+							<img class="img-fluid" src="{{ product.featured_image | product_img_url: '300x' }}" alt="{{ product.featured_image.alt }}"/>
+							</a>
+						</div>
+						<div class="product-menu__content">
+							<h5 class="product-menu__name">
+							<a href="{{ product.url }}" title="{{ product.title | escape }}">{{ product.title }}</a>
+							</h5>
+							<div class="product-menu__price">
+							{% if on_sale %}
+								<span class="product-price product-price--regular">{{ product.compare_at_price | money }}</span>
+							{% endif %}
+							<span class="product-price">{{ product.price | money }}</span>
+							</div>
+						</div>
+						</div>
+					{%- endfor -%}
+					</div>
+				</div>
+				</div>
+			{%- endif -%}
+			{%- if block.settings.html -%}
+				<div class="menu-row__col menu-row__col--{{ block.settings.html_col }}">
+				{%- assign block_title = block.settings.html_title -%}
+				{%- assign block_html = block.settings.html_content -%}
+				<div class="megamenu-html">
+					{%- if block_title != blank -%}<div class="megamenu-html__heading megamenu-heading"><span>{{ block_title }}</span></div>{%- endif -%}
+					<div class="megamenu-html__content">{{ block_html }}</div>
+				</div>
+				</div>
+			{%- endif -%}
+			{%- if block.settings.banner -%}
+				<div class="menu-row__col menu-row__col--{{ block.settings.banner_col }}">
+					<div class="megamenu-banner">
+						<a href="{{ block.settings.banner_link }}">
+						{%- if block.settings.image -%}
+							<img class="img-fluid" alt="{{ block.settings.image.alt | default: shop.name }}" src="{{ block.settings.image | img_url: 'master' }}" />
+						{%- else -%}
+							{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+						{%- endif -%}
+						</a>
+					</div>
+				</div>
+			{%- endif -%}
+			{%- if block.settings.collection_enable -%}
+				<div class="megamenu-collection-list menu-row__col menu-row__col--{{ block.settings.colllection_col }}">
+					<div class="menu-row row">
+						{% if block.settings.collection_title != blank %}
+							<div class="megamenu-heading"><span class="pb-2">{{ block.settings.collection_title }}</span></div>
+						{% endif %}
+						{% for i in (1..10) %}
+							{% assign listcollection = 'velamenu_list_collection' | append:i %}
+							{% assign collectionTitle = block.settings[listcollection] %}
+							{% if collectionTitle != blank %}
+								<div class="my-2 menu-row__col menu-row__col--{{ block.settings.colllection_col_item }}">
+									<div class="collImage">
+										<a class="d-block overflow-hidden rounded-3" href="{{ collections[collectionTitle].url }}">
+											{%- if collections[collectionTitle].image -%}
+												{% include 'img-global', image: collections[collectionTitle].image %}
+											{%- else -%}
+											{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+											{%- endif -%}
+										</a>
+									</div>
+									<h6 class="collTitle mb-0"><a class="link" href="{{ collections[collectionTitle].url }}" title="{{ collections[collectionTitle].title }}"> {{ collections[collectionTitle].title }}</a></h6>											
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			{%- endif -%}
+		</div>
+	</div>
+</li>

@@ -1,0 +1,328 @@
+{%- assign nav = section.settings.navigation -%}
+{%- assign infinite = section.settings.infinite -%}
+{%- assign autoplay = section.settings.autoplay -%}
+{%- assign autoplay_speed = section.settings.autoplay_speed | escape -%}
+{%- assign image_ratio = section.settings.image_ratio -%}
+{%- assign owlColumn1 = section.settings.column1 | plus:0 -%}
+{%- assign owlColumn2 = section.settings.column2 | plus:0 -%}
+{%- assign owlColumn3 = section.settings.column3 | plus:0 -%}
+{%- assign owlColumn4 = section.settings.column4 | plus:0 -%}
+
+{%- assign image_crop = nil -%}
+{%- if section.settings.crop -%}
+    {%- assign image_crop = 'center' -%}
+{%- endif -%}
+{%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+    {%- capture bgColor -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.padding_block != blank -%}
+    {%- capture paddingblock -%}
+        padding: {{section.settings.padding_block}};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.margin_block != blank -%}
+    {%- capture marginblock -%}
+        margin: {{section.settings.margin_block}};
+    {%- endcapture -%}
+{%- endif -%}
+    
+{%- assign image_size = section.settings.image_size | default: '105x105' -%}
+{%- assign maxw = image_size | split: 'x' | first -%}
+
+<section class="vela-section collection-list-link overflow-hidden" style="{{ bgColor}}{{ paddingblock }}{{ marginblock }}">
+    <div class="container{% if section.settings.full_with %}-fluid{% endif %}">
+        <div class="vela-section__inner">
+            <div class="vela-section__content">
+                {%- if section.settings.slide_enable -%}
+                    <div class="js-carousel slick-carousel"
+                    data-nav="{{ nav }}"
+                    data-infinite="{{ infinite }}"
+                    data-autoplay="{{ autoplay }}"
+                    data-autoplayspeed="{{ autoplay_speed }}"
+                    data-columnone="{{ owlColumn1 }}" 
+                    data-columntwo="{{ owlColumn2 }}" 
+                    data-columnthree="{{ owlColumn3 }}" 
+                    data-columnfour="{{ owlColumn4 }}">
+                        {% for block in section.blocks %}
+                            <div class="slick-carousel__item">
+                                <div class="collection-list-link__box d-flex align-items-center mb-3">
+                                    <div class="collection-list-link--image me-2 overflow-hidden rounded-circle" style="width: {{maxw}}px; min-width: {{maxw}}px;">
+                                        {% if block.settings.collection_image != blank %}
+                                            {% include 'img-global', image: block.settings.collection_image, image_size: image_size,image_ratio: image_ratio, crop: image_crop %}
+                                        
+                                        {% else %}
+                                            <img class="img-fluid" alt="{{ shop.name }}" src="https://via.placeholder.com/{{ image_size }}.jpg" />
+                                        {% endif %}
+                                    </div>
+                                    {%- if block.settings.title != blank -%}
+                                        <h4 class="m-0 w-100 rounded-pill px-3 py-3 text-center lh-1" style="font-size: {{block.settings.title_size}}px; background-color: {{ block.settings.title_bg }}; color: {{ block.settings.title_color}};"> 
+                                            {{ block.settings.title }}
+                                        </h4>
+                                    {%- endif -%}
+                                </div>
+                                {%- if block.settings.collection_link != blank -%}
+                                    <div class="collection-list-link border border-2 rounded-3 px-3 py-3 px-md-4">
+                                        <ul class="link-list list-unstyled m-0">
+                                            {% for linklist in linklists[block.settings.collection_link].links %}
+                                                <li class="">
+                                                    <a class="fw-bold d-block py-1 mb-1 link" href="{{ linklist.url }}" title="">{{ linklist.title }}</a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {%- endif-%}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {%- else -%}
+                    {%- if owlColumn1 == 5 -%}
+                        {%- assign noowlColumn1 = '2-4'  -%}
+                    {%- else -%}
+                        {%- assign noowlColumn1 = 12 | divided_by: owlColumn1 | ceil  -%}
+                    {%- endif -%}
+                    {%- assign noowlColumn2 =  12 | divided_by: owlColumn2 | ceil -%}
+                    {%- assign noowlColumn3 = 12 | divided_by: owlColumn3 | ceil -%}
+                    {%- assign noowlColumn4 = 12 | divided_by: owlColumn4 | ceil  -%}
+                    {%- capture strGridItem -%}col-{{ noowlColumn4 }} col-md-{{ noowlColumn3 }} col-lg-{{ noowlColumn2 }} col-xl-{{ noowlColumn1 }}{%- endcapture -%}
+                    <div class="row">
+                        {% for block in section.blocks %}
+                            <div class="{{ strGridItem }} mb-4">
+                                <div class="collection-list-link__box d-flex align-items-center mb-3">
+                                    <div class="collection-list-link--image me-2 overflow-hidden rounded-circle" style="width: {{maxw}}px; min-width: {{maxw}}px;">
+                                        {% if block.settings.collection_image != blank %}
+                                            {% include 'img-global', image: block.settings.collection_image, image_size: image_size,image_ratio: image_ratio, crop: image_crop %}
+                                        
+                                        {% else %}
+                                            <img class="img-fluid" alt="{{ shop.name }}" src="https://via.placeholder.com/{{ image_size }}.jpg" />
+                                        {% endif %}
+                                    </div>
+                                    {%- if block.settings.title != blank -%}
+                                        <h4 class="m-0 w-100 rounded-pill px-3 py-3 text-center lh-1" style="font-size: {{block.settings.title_size}}px; background-color: {{ block.settings.title_bg }}; color: {{ block.settings.title_color}};"> 
+                                            {{ block.settings.title }}
+                                        </h4>
+                                    {%- endif -%}
+                                </div>
+                                {%- if block.settings.collection_link != blank -%}
+                                    <div class="collection-list-link border border-2 rounded-3 px-3 py-3 px-md-4">
+                                        <ul class="link-list list-unstyled m-0">
+                                            {% for linklist in linklists[block.settings.collection_link].links %}
+                                                <li class="">
+                                                    <a class="fw-bold d-block py-1 mb-1 link" href="{{ linklist.url }}" title="">{{ linklist.title }}</a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {%- endif-%}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {%- endif -%}
+            </div>
+        </div>       
+    </div>
+</section>
+{% schema %}
+{
+	"name": "Collection list link",
+	"class": "velaFramework",
+	"settings": [
+		{
+			"type": "header",
+			"content": "Design Section"
+		},
+		{
+			"type": "checkbox",
+			"id": "full_with",
+			"label": "Enabel Full Width?"
+		},
+		{
+			"type": "color",
+			"id": "color_bg",
+			"label": "Background Color",
+			"default": "rgba(0,0,0,0)"
+		},
+		{
+			"type": "text",
+			"id": "padding_block",
+			"label": "Padding",
+			"placeholder": "0px 0px",
+			"info": "Ex: 0px 0px 0px 0px and use desktop only"
+		},
+		{
+			"type": "text",
+			"id": "margin_block",
+			"label": "Margin",
+			"placeholder": "0px 0px",
+			"default": "0 0 30px",
+			"info": "Ex: 0px 0px 30px 0px"
+		},
+		{
+			"type": "header",
+			"content": "General Settings"
+		},
+        {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+              {
+                "value": "adapt",
+                "label": "Adapt to image"
+              },
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "square",
+                "label": "Square"
+              }
+            ],
+            "default": "adapt",
+            "label": "Image ratio"
+        },
+        {
+            "type": "checkbox",
+            "id": "crop",
+            "label": "Crop Image",
+            "default": false,
+            "info": "Not use with Adapt to image"
+        },
+        {
+            "type": "text",
+            "id": "image_size",
+            "label": "Image size",
+            "default": "105x105",
+            "info": "Ex: 105x105"
+        },
+		{
+            "type": "header",
+            "content": "Carousel Settings"
+        },
+        {
+            "type": "checkbox",
+            "id": "slide_enable",
+            "label": "Enable Slide",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "navigation",
+            "label": "Show navigation",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "infinite",
+            "label": "Infinite loop sliding",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Enable autoplay",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "autoplay_speed",
+            "label": "Autoplay speed",
+            "info": "Autoplay speed in milliseconds. Type: int(ms)",
+            "default": "10000"
+        },
+        {
+            "type": "range",
+            "id": "column1",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "label": "#Column 1",
+            "default": 5,
+            "info": "Large desktops"
+        },
+        {
+            "type": "range",
+            "id": "column2",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "label": "#Column 2",
+            "default": 3,
+            "info": "Desktops & Tablets landscape"
+        },
+        {
+            "type": "range",
+            "id": "column3",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "label": "#Column 3",
+            "default": 2,
+            "info": "Mobile phone landscape"
+        },
+        {
+            "type": "range",
+            "id": "column4",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "label": "#Column 4",
+            "default": 2,
+            "info": "Mobile phone"
+        }
+	],
+	"blocks": [
+		{
+            "type": "item",
+            "name": "Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "collection_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Shop Title"
+                },
+                {
+                    "type": "range",
+                    "id": "title_size",
+                    "min": 10,
+                    "max": 50,
+                    "step": 1,
+                    "label": "Font size",
+                    "default": 14,
+                    "unit": "px"
+                },
+                {
+                    "type": "color",
+                    "id": "title_color",
+                    "label": "Color",
+                    "default": "#fff"
+                },
+                {
+                    "type": "color",
+                    "id": "title_bg",
+                    "label": "Background color",
+                    "default": "#ff6262"
+                },
+                {
+                    "type": "link_list",
+                    "id": "collection_link",
+                    "label": "Link list"
+                }
+            ]
+		}
+	],
+	"presets": [
+		{
+			"name": "Collection list link",
+            "category": "4. element"
+		}
+  	]
+}
+{% endschema %}
