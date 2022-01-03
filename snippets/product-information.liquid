@@ -187,6 +187,23 @@
                                             </select>
                                             {%- endif -%}
                                         </div>
+                                      
+                                      
+                                      {% comment %}START Product Personalization{% endcomment %}                      
+                                      
+                                      <div id="productPersonalizationFieldWrapper" class="hide">                                                             
+                                          {% for personalization_option in product.options_by_name['Personalization'].values %}                             	
+                                            {% if personalization_option == 'Personalization'%}
+                                        	<label for="personalization"><b>Add your personalization:</b></label>
+                                            <p class="">Enter the name you want on the towel EXACTLY how you want it written. Thank you!</p>                                              
+                                            <textarea id="personalizationNameField" type="text" name="properties[personalizationNameField]" ></textarea>                                        
+                                            {% endif %}                             	      							
+                                          {% endfor %}                              
+                                      </div>                                    
+                                      {% comment %}END Product Personalization{% endcomment %}         
+                                      
+                                      
+                                      
                                     </div>
                                 {%- endfor -%}
                             {% endunless %}
@@ -256,7 +273,7 @@
                                         </div>
                                     </div>
                                 {%- endif -%}
-                                    {% comment %}Add to cart button{% endcomment %}
+                                    {% comment %}Add to cart button{% endcomment %}                              		
                                     <button
                                     class="btn btn--add-to-cart btn-default"{% unless current_variant.available %} disabled="disabled"{% endunless %}
                                     type="submit"
@@ -273,6 +290,10 @@
                                     {{ form | payment_button }}
                                 {% endif %}
                             </div>
+                                            
+             
+                                               
+             
                         {% endform %} 
                     </div>  
             

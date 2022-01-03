@@ -1066,7 +1066,7 @@ var ajaxCart = (function(module, $) {
     $('.js-cart-modal').fadeIn(400);
   };
 
-  cartUpdateCallback = function(cart, added) {
+  cartUpdateCallback = function(cart, added) {    
     updateCountPrice(cart);
     buildCart(cart);
 

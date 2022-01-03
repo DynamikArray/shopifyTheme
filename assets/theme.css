@@ -1,3 +1,12 @@
+.vela-section--services .heading{
+	color: #fff;
+}
+
+.footer-info.accordion-footer .footer__title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
   z-index: 4; }

@@ -58,7 +58,7 @@
 									{{ settings.newsletter_popup_html }}
 								</div>
 							{%- endif -%}
-					
+
 							{%- assign mailchimp = settings.newsletter_popup_mailchimp -%}
 							{%- assign mailchimp_action = settings.newsletter_popup_form_action | replace: '/post?', '/post-json?' | append: '&amp;c=?' -%}
 							{%- if mailchimp -%}
@@ -90,7 +90,7 @@
 											placeholder="{{ 'newsletter.newsletter_email' | t }}"
 											name="contact[email]"
 											class="form-control newsletter-form__input"
-											type="email" 
+											type="email"
 											autocorrect="off"
 											autocapitalize="off"/>
 											<button class="js-newsletter-popup-submit btn newsletter-form__submit btn-default" type="submit">
@@ -180,9 +180,9 @@
           <div class="ajaxcart__line-item--right">
             <div class="ajaxcart__product-description">
               <div class="ajaxcart__product-name-wrapper">
-                <a href="{{url}}" class="ajaxcart__product-name d-block mb-1">{{{name}}}</a>
+                <a href="{{url}}" class="ajaxcart__product-name d-block mb-1">{{{name}}}</a>                
                 {{#if variation}}
-                  <span class="ajaxcart__product-meta">{{variation}}</span>
+                  <span class="ajaxcart__product-meta">{{variation}}</span>         
                 {{/if}}
                 {{#properties}}
                   {{#each this}}
@@ -217,7 +217,7 @@
                         {% endraw %}{% render 'icons', icon: 'minus', class: 'icon-minus' %}{% raw %}
                       </button>
                       <input type="text" name="updates[]" class="ajaxcart__qty-num vela-qty__number" value="{{itemQty}}" min="0" data-id="{{key}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
-                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus vela-qty__adjust vela-qty__adjust--plus" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="{% endraw %}{{ 'sections.cart.increase_quantity' | t }}{% raw %}">                       
+                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus vela-qty__adjust vela-qty__adjust--plus" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="{% endraw %}{{ 'sections.cart.increase_quantity' | t }}{% raw %}">
                         {% endraw %}{% render 'icons', icon: 'plus', class: 'icon-plus' %}{% raw %}
                       </button>
                     </div>
@@ -340,7 +340,7 @@
                         <div class="js-product-avaiable-text product-avaiable__text product-avaiable__text--instock">{{'products.product.in_stock' | t }}</div>
                         {% render 'icons', icon: 'check' %}
                       </div>
-                    
+
                       <div class="product-avaiable product-avaiable--outstock">
                         <div class="product-avaiable__label d-none">{{ 'products.product.availability' | t }} </div>
                         <div class="js-product-avaiable-text product-avaiable__text product-avaiable__text--outstock">{{'products.product.out_stock' | t }}</div>
