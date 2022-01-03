@@ -404,3 +404,10 @@
 /*popup modal*/
 .popup--wrap .modal {
   background-color: rgba(0, 0, 0, 0.5); }
+
+#productPersonalizationFieldWrapper{
+	display: none;
+}
+#personalizationNameField{
+  width: 100%;
+}

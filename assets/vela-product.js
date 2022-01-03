@@ -76,6 +76,8 @@ vela.Variants = (function() {
       this._updateMedia(variant);
       this._updatePrice(variant);
       this._updateSKU(variant);
+      this._updatePersonalization(variant);
+    
       this.currentVariant = variant;
 
       if (this.enableHistoryState) {
@@ -212,7 +214,22 @@ vela.Variants = (function() {
 
     _updateMasterSelect: function(variant) {
       $(this.originalSelectorId, this.$container).val(variant.id);
-    }
+    },
+
+    _updatePersonalization: function(variant){
+      switch (variant.option1){
+        case "Personalization":
+          $('#personalizationNameField').prop('required', true);         
+          $('#productPersonalizationFieldWrapper').show();         
+        break;
+        case "No Personalization":
+          $('#personalizationNameField').val('');
+          $('#personalizationNameField').prop('required', false);         
+          $('#productPersonalizationFieldWrapper').hide();         
+        break;
+      }
+    },
+    
   });
 
   return Variants;
