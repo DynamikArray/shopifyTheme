@@ -283,7 +283,7 @@
             "color_title": "#ffffff",
             "title_font_size": 24,
             "box_desc": "With great materials and attention to the details our products stand up to your little ones.",
-            "color_desc": "#fff",
+            "color_desc": "#ffffff",
             "desc_font_size": 15
           }
         },
@@ -294,7 +294,7 @@
             "color_title": "#ffffff",
             "title_font_size": 24,
             "box_desc": "Over 1000 5 Star reviews and many more satisfied customers, our work speaks for itself",
-            "color_desc": "#fff",
+            "color_desc": "#ffffff",
             "desc_font_size": 15
           }
         },
@@ -305,7 +305,7 @@
             "color_title": "#ffffff",
             "title_font_size": 24,
             "box_desc": "Orders are carefully packaged and shipped so your product arrives ready to go",
-            "color_desc": "#fff",
+            "color_desc": "#ffffff",
             "desc_font_size": 15
           }
         },
@@ -354,6 +354,7 @@
         "9d480560-c0d2-4e44-9af3-2b2be9f3804a": {
           "type": "item",
           "settings": {
+            "avatar": "shopify:\/\/shop_images\/Woman_1.png",
             "name": "Madaliene",
             "position": "",
             "review": "My granddaughter LOVED her unicorn hooded bath towel.\nIt was adorable!! One of her favorite Christmas presents."

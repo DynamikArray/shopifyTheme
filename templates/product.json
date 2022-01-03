@@ -1,1 +1,191 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb-product","settings":{"padding_block":"","margin_block":"0 0 20px","breadcrumb_title":"Product","enable_title":"none","breadcrumb_bg":"#e9f2f4","breadcrumb_color_heading":"#1f2021","breadcrumb_color":"#1f2021","breadcrumb_color_link":"#0cb1b1","breadcrumb-height":"50px","breadcrumb-mheight":"50px","text-align":"justify"}},"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"block_margin":"mb-3"}},"491c3678-a254-4566-821b-051ef3bc6c42":{"type":"reivew","settings":{"block_margin":"mb-3"}},"price":{"type":"price","settings":{"block_margin":"mb-3"}},"ef04f100-f436-4082-b40d-b8f839167ecd":{"type":"text","settings":{"text":"","block_margin":"mb-4"}},"fb8bae5f-a47f-44ca-a4f4-caea832ea54d":{"type":"countdown","settings":{"block_margin":"mb-4","heading":"Hurry up ! Deal ends in:"}},"buy_buttons":{"type":"buy_buttons","settings":{"block_margin":"mb-3","product_sku_enable":true,"product_available_enable":true,"product_selector":"radio","product_color_enable":true,"quantity_enabled":true,"quantity_selector":"text","enable_payment_button":true}},"product_organization":{"type":"product_organization","settings":{"product_available_enable":true,"product_type_enable":false,"product_vendor_enable":false,"product_sku_enable":true,"product_collection_enable":true,"product_collection_title":"Categories:","product_coll_limit":6,"product_tags_enable":true,"product_tags_title":"Tags:","product_tags_limit":6,"block_margin":"mb-3"}},"91c084e3-67d1-463e-b5bd-5a47d8837949":{"type":"share","settings":{"share_label":"Share","block_margin":"mb-4"}},"36d5f635-65a1-4848-b5a8-19eab6142e3e":{"type":"custom_liquid","disabled":true,"settings":{"block_margin":"mb-0","custom_liquid":""}},"26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2":{"type":"shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f","settings":{}}},"block_order":["title","491c3678-a254-4566-821b-051ef3bc6c42","price","ef04f100-f436-4082-b40d-b8f839167ecd","fb8bae5f-a47f-44ca-a4f4-caea832ea54d","buy_buttons","product_organization","91c084e3-67d1-463e-b5bd-5a47d8837949","36d5f635-65a1-4848-b5a8-19eab6142e3e","26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2"],"settings":{"product_sticky":true,"media_layout":"thumbnails","enable_image_zoom":true,"enable_video_looping":true}},"producttab-information":{"type":"vela-product-tab-information","blocks":{"cc0df252-0d33-495c-82c8-a87d37c17375":{"type":"description","settings":{"heading":"Description"}},"295fb712-0835-4d66-a307-ba6e6ac207e7":{"type":"extra_tab","disabled":true,"settings":{"heading":"Additional","content":"<div class=\"d-flex justify-content-center\">\n<ol>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/li>\n<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<\/li>\n<li>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<\/li>\n<\/ol>\n<\/div>","content_1":""}},"c15425a1-d216-4c26-a373-463630c46a94":{"type":"extra_tab","settings":{"heading":"Shipping & Return","content":"<h4>Returns Policy<\/h4><p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).<\/p><p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).<\/p><p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<\/p><h4 class=\"mt-4\">Shipping<\/h4><p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.<\/p><p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.<\/p><p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.<\/p>","content_1":""}},"88a3bbbc-280f-4e38-ac10-bf23965dac6b":{"type":"extra_tab","settings":{"heading":"Tab heading","content":"","content_1":""}}},"block_order":["cc0df252-0d33-495c-82c8-a87d37c17375","295fb712-0835-4d66-a307-ba6e6ac207e7","c15425a1-d216-4c26-a373-463630c46a94","88a3bbbc-280f-4e38-ac10-bf23965dac6b"],"settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"0 0 20px","margin_block":"0 0 60px","review_title":"Reviews","product_review":"tab"}},"product-recommendations":{"type":"product-recommendations","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"60px 0 30px","margin_block":"","heading":"You may also like","sub_heading":"Products similar to this"}}},"order":["breadcrumb","main","producttab-information","product-recommendations"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb-product",
+      "settings": {
+        "padding_block": "",
+        "margin_block": "0 0 20px",
+        "breadcrumb_title": "Product",
+        "enable_title": "none",
+        "breadcrumb_bg": "#e9f2f4",
+        "breadcrumb_color_heading": "#1f2021",
+        "breadcrumb_color": "#1f2021",
+        "breadcrumb_color_link": "#0cb1b1",
+        "breadcrumb-height": "50px",
+        "breadcrumb-mheight": "50px",
+        "text-align": "justify"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "491c3678-a254-4566-821b-051ef3bc6c42": {
+          "type": "reivew",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "ef04f100-f436-4082-b40d-b8f839167ecd": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "block_margin": "mb-4"
+          }
+        },
+        "fb8bae5f-a47f-44ca-a4f4-caea832ea54d": {
+          "type": "countdown",
+          "settings": {
+            "block_margin": "mb-4",
+            "heading": "Hurry up ! Deal ends in:"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "block_margin": "mb-3",
+            "product_sku_enable": true,
+            "product_available_enable": true,
+            "product_selector": "radio",
+            "product_color_enable": true,
+            "quantity_enabled": true,
+            "quantity_selector": "text",
+            "enable_payment_button": true
+          }
+        },
+        "product_organization": {
+          "type": "product_organization",
+          "settings": {
+            "product_available_enable": true,
+            "product_type_enable": false,
+            "product_vendor_enable": false,
+            "product_sku_enable": true,
+            "product_collection_enable": true,
+            "product_collection_title": "Categories:",
+            "product_coll_limit": 6,
+            "product_tags_enable": true,
+            "product_tags_title": "Tags:",
+            "product_tags_limit": 6,
+            "block_margin": "mb-3"
+          }
+        },
+        "91c084e3-67d1-463e-b5bd-5a47d8837949": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "block_margin": "mb-4"
+          }
+        },
+        "36d5f635-65a1-4848-b5a8-19eab6142e3e": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "block_margin": "mb-0",
+            "custom_liquid": ""
+          }
+        },
+        "26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "491c3678-a254-4566-821b-051ef3bc6c42",
+        "price",
+        "ef04f100-f436-4082-b40d-b8f839167ecd",
+        "fb8bae5f-a47f-44ca-a4f4-caea832ea54d",
+        "buy_buttons",
+        "product_organization",
+        "91c084e3-67d1-463e-b5bd-5a47d8837949",
+        "36d5f635-65a1-4848-b5a8-19eab6142e3e",
+        "26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2"
+      ],
+      "settings": {
+        "product_sticky": true,
+        "media_layout": "thumbnails",
+        "enable_image_zoom": true,
+        "enable_video_looping": true
+      }
+    },
+    "producttab-information": {
+      "type": "vela-product-tab-information",
+      "blocks": {
+        "cc0df252-0d33-495c-82c8-a87d37c17375": {
+          "type": "description",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "295fb712-0835-4d66-a307-ba6e6ac207e7": {
+          "type": "extra_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Additional",
+            "content": "<div class=\"d-flex justify-content-center\">\n<ol>\n<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/li>\n<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/li>\n<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<\/li>\n<li>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<\/li>\n<\/ol>\n<\/div>",
+            "content_1": ""
+          }
+        },
+        "c15425a1-d216-4c26-a373-463630c46a94": {
+          "type": "extra_tab",
+          "settings": {
+            "heading": "Shipping & Return",
+            "content": "<h4>Returns Policy<\/h4><p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).<\/p><p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).<\/p><p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<\/p><h4 class=\"mt-4\">Shipping<\/h4><p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.<\/p><p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.<\/p><p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.<\/p>",
+            "content_1": ""
+          }
+        },
+        "88a3bbbc-280f-4e38-ac10-bf23965dac6b": {
+          "type": "extra_tab",
+          "settings": {
+            "heading": "Tab heading",
+            "content": "",
+            "content_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc0df252-0d33-495c-82c8-a87d37c17375",
+        "295fb712-0835-4d66-a307-ba6e6ac207e7",
+        "c15425a1-d216-4c26-a373-463630c46a94",
+        "88a3bbbc-280f-4e38-ac10-bf23965dac6b"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 20px",
+        "margin_block": "0 0 60px",
+        "review_title": "Reviews",
+        "product_review": "tab"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "60px 0 30px",
+        "margin_block": "",
+        "heading": "You may also like",
+        "sub_heading": "Products similar to this"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "producttab-information",
+    "product-recommendations"
+  ]
+}
