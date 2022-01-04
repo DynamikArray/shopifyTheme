@@ -172,9 +172,9 @@
             "content": "",
             "text_color": "#000000",
             "button": "Shop now",
-            "button_color": "#262627",
-            "button_border_color": "#f6ff00",
-            "button_color_bg": "#f6ff00",
+            "button_color": "#ffffff",
+            "button_border_color": "#15c7e4",
+            "button_color_bg": "#15c7e4",
             "text_align": "left",
             "banner_position": "over"
           }
