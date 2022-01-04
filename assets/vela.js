@@ -532,39 +532,6 @@ vela.QuickView = (function() {
           result += '</div>';
         }
       }
-
-      //Start product personalization
-
-      var options = product.options;
-      for (var i = 0; i < options.length; i ++) {
-        var option = options[i];
-        var optionIndex = i + 1;
-        if(option.name == 'Personalization'){
-          result += '<div id="productPersonalizationFieldWrapper" class="hide">'
-          result += '<label for="personalization"><b>Add your personalization:</b></label>'
-          result += '<p class="">Enter the name you want on the towel EXACTLY how you want it written. Thank you!</p>'
-          result += '<textarea id="personalizationNameField" type="text" name="properties[Name]" ></textarea>'
-          result += '</div>';
-        }
-      };
-
-      //End product personalization
-
-
-      /*
-      {% comment %}START Product Personalization{% endcomment %}
-          {% for personalization_option in product.options_by_name['Personalization'].values %}
-            {% if personalization_option == 'Personalization'%}
-          <label for="personalization"><b>Add your personalization:</b></label>
-            <p class="">Enter the name you want on the towel EXACTLY how you want it written. Thank you!</p>
-            <textarea id="personalizationNameField" type="text" name="properties[Name]" ></textarea>
-            {% endif %}
-          {% endfor %}
-
-      {% comment %}END Product Personalization{% endcomment %}
-      */
-
-
       return result;
     },
 
