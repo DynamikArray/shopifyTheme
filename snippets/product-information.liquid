@@ -203,6 +203,9 @@
                                 {% comment %}END Product Personalization{% endcomment %}
 
                             {% endunless %}
+                            <p class="BSR">
+                              We are here
+                            </p>
                             <select name="id" class="js-product-select--{{ section.id }} product-single__variants d-none">
                                 {%- for variant in product.variants -%}
                                     {%- if variant.available -%}
