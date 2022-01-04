@@ -1,1 +1,70 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb-page","settings":{"padding_block":"","margin_block":"0 0 60px","bgimage":true,"image":"shopify:\/\/shop_images\/breadcumd.jpg","breadcrumb_title":"Our story","enable_title":"desktop","breadcrumb_bg":"rgba(0,0,0,0)","breadcrumb_color_heading":"rgba(0,0,0,0)","breadcrumb_color":"rgba(0,0,0,0)","breadcrumb_color_link":"rgba(0,0,0,0)","breadcrumb-height":"200px","breadcrumb-mheight":"200px","text-align":"center"}},"main":{"type":"main-page-faqs","blocks":{"4b0ae87f-12aa-4ab4-a2af-220cf225efbe":{"type":"faq","settings":{"title":"01. The order","content":"<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"}},"81ad3331-1a26-4ee8-a748-870323ebab23":{"type":"faq","settings":{"title":"02. Shipment","content":"<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"}},"ad0a2930-a5d4-41a0-9b25-6eeb84fbf6f9":{"type":"faq","settings":{"title":"03. The order","content":"<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"}},"2aae8f27-e9fe-4b45-a239-c124759b73f4":{"type":"faq","settings":{"title":"04. Returns, exchanges and complaints","content":"<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"}}},"block_order":["4b0ae87f-12aa-4ab4-a2af-220cf225efbe","81ad3331-1a26-4ee8-a748-870323ebab23","ad0a2930-a5d4-41a0-9b25-6eeb84fbf6f9","2aae8f27-e9fe-4b45-a239-c124759b73f4"],"settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"","margin_block":"60px 0 0"}}},"order":["breadcrumb","main"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb-page",
+      "settings": {
+        "padding_block": "",
+        "margin_block": "0 0 10px",
+        "bgimage": false,
+        "breadcrumb_title": "",
+        "enable_title": "none",
+        "breadcrumb_bg": "rgba(0,0,0,0)",
+        "breadcrumb_color_heading": "rgba(0,0,0,0)",
+        "breadcrumb_color": "#000",
+        "breadcrumb_color_link": "#0cb1b1",
+        "breadcrumb-height": "60px",
+        "breadcrumb-mheight": "60px",
+        "text-align": "start"
+      }
+    },
+    "main": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "4b0ae87f-12aa-4ab4-a2af-220cf225efbe": {
+          "type": "faq",
+          "settings": {
+            "title": "01. The order",
+            "content": "<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"
+          }
+        },
+        "81ad3331-1a26-4ee8-a748-870323ebab23": {
+          "type": "faq",
+          "settings": {
+            "title": "02. Shipment",
+            "content": "<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"
+          }
+        },
+        "ad0a2930-a5d4-41a0-9b25-6eeb84fbf6f9": {
+          "type": "faq",
+          "settings": {
+            "title": "03. The order",
+            "content": "<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"
+          }
+        },
+        "2aae8f27-e9fe-4b45-a239-c124759b73f4": {
+          "type": "faq",
+          "settings": {
+            "title": "04. Returns, exchanges and complaints",
+            "content": "<h6>When do I receive my order?<\/h6>\n<p>When placing the order, a day of shipment is indicated. After the order has been placed, the same delivery time will also be stated on the order confirmation. It is therefore never possible that during the order, the shipping day on the website, is different than on the order confirmation.<\/p>\n\n<h6>I now see the longer delivery time of (a part of) my order. How can I cancel it?<\/h6>\n<p>If the order has a longer delivery time than you had previously seen, it is of course possible to cancel (a part of) the order. For this you can contact our customer service. They will cancel the order for you. The purchase amount will be back on your bank account within two working days. When an order has already been shipped, it can no longer be cancelled.<\/p>\n<p><\/p>\n<h6>When will I receive the invoice for my order?<\/h6>\n<p>When you have paid for the order, you will not automatically receive an invoice for your order. If you wish to receive an invoice, this can be done in two ways.The first way is through your account at our store. When you log in to your account you can see your orders and download the invoice.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4b0ae87f-12aa-4ab4-a2af-220cf225efbe",
+        "81ad3331-1a26-4ee8-a748-870323ebab23",
+        "ad0a2930-a5d4-41a0-9b25-6eeb84fbf6f9",
+        "2aae8f27-e9fe-4b45-a239-c124759b73f4"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "",
+        "margin_block": "60px 0 0"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main"
+  ]
+}
