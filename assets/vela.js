@@ -534,16 +534,20 @@ vela.QuickView = (function() {
       }
 
       //Start product personalization
-      result += '<div id="productPersonalizationFieldWrapper" class="hide">'
+
       var options = product.options;
       for (var i = 0; i < options.length; i ++) {
         var option = options[i];
         var optionIndex = i + 1;
-        console.log(option);
-        // result +=
-        // result +=
+        if(option.name == 'Personalization'){
+          result += '<div id="productPersonalizationFieldWrapper" class="hide">'
+          result += '<label for="personalization"><b>Add your personalization:</b></label>'
+          result += '<p class="">Enter the name you want on the towel EXACTLY how you want it written. Thank you!</p>'
+          result += '<textarea id="personalizationNameField" type="text" name="properties[Name]" ></textarea>'
+          result += '</div>';
+        }
       };
-      result += '</div>';
+
       //End product personalization
 
 
@@ -560,7 +564,6 @@ vela.QuickView = (function() {
       {% comment %}END Product Personalization{% endcomment %}
       */
 
-      console.log("BUILD VARIANTS->", result);
 
       return result;
     },
