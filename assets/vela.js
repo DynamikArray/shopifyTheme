@@ -539,16 +539,15 @@ vela.QuickView = (function() {
       for (var i = 0; i < options.length; i ++) {
         var option = options[i];
         var optionIndex = i + 1;
-
-        console.log(option)
+        console.log(option);
         // result +=
         // result +=
-      }
-      result += '</div>'
+      };
+      result += '</div>';
       //End product personalization
 
 
-
+      /*
       {% comment %}START Product Personalization{% endcomment %}
           {% for personalization_option in product.options_by_name['Personalization'].values %}
             {% if personalization_option == 'Personalization'%}
@@ -559,6 +558,7 @@ vela.QuickView = (function() {
           {% endfor %}
 
       {% comment %}END Product Personalization{% endcomment %}
+      */
 
       console.log("BUILD VARIANTS->", result);
 
