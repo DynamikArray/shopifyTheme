@@ -34,7 +34,7 @@
     "giftcard_logo": "shopify:\/\/shop_images\/favicon.png",
     "product_reviews_enable": true,
     "preloading": false,
-    "quickview_enable": false,
+    "quickview_enable": true,
     "quickview_proshortdesc": true,
     "quickview_prosku": true,
     "quickview_availability": true,
