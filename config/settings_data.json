@@ -49,7 +49,7 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/",
     "social_pinterest_link": "",
     "social_instagram_link": "https:\/\/instagram.com",
-    "image_ratio": "portrait",
+    "image_ratio": "square",
     "crop": false,
     "show_secondary_image": true,
     "product_card_review": true,
