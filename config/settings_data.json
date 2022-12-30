@@ -119,7 +119,7 @@
           "fullwidth": false,
           "padding_block": "10px 0",
           "logo_width": 240,
-          "logo_position": "left",
+          "logo_position": "center",
           "menu": "main-menu",
           "enable_sticky_header": false,
           "menu_text": "Free shipping on orders over $50"
