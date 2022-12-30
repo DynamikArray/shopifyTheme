@@ -112,7 +112,7 @@
         "76253806-007f-400c-b968-dae5c1195e97"
       ],
       "settings": {
-        "sidebar_template": "sidebarnone",
+        "sidebar_template": "sidebarleft",
         "products_per_page": 16,
         "products_ditem_per_row": 4,
         "products_titem_per_row": 3,
