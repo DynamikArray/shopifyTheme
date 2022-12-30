@@ -106,6 +106,28 @@
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
           }
+        },
+        "6952331a-993a-420c-918c-f13e8f0a5049": {
+          "type": "shopify:\/\/apps\/shuttle-sync-with-etsy\/blocks\/product-reviews\/2a754242-c2c0-4c10-9503-14343fa57b1c",
+          "settings": {
+            "template": "one",
+            "include_avatar": "yes",
+            "background_color": "#f1f1f1",
+            "border_color": "#f1f1f1",
+            "text_color": "#414141",
+            "title": "Product reviews from our Etsy shop",
+            "title_align": "center",
+            "title_size": "h2",
+            "reviewer_name": "full",
+            "star_color": "#f45800",
+            "star_size": 20,
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "arrow_positioning": "outside",
+            "read_more_text": "Read More",
+            "hide_text": "Hide",
+            "posted_on_text": "Posted on"
+          }
         }
       },
       "block_order": [
@@ -119,7 +141,8 @@
         "product_organization",
         "91c084e3-67d1-463e-b5bd-5a47d8837949",
         "36d5f635-65a1-4848-b5a8-19eab6142e3e",
-        "26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2"
+        "26f6cc96-64e0-41d4-90b4-a9e27cd9c3f2",
+        "6952331a-993a-420c-918c-f13e8f0a5049"
       ],
       "settings": {
         "product_sticky": true,
@@ -130,6 +153,7 @@
     },
     "producttab-information": {
       "type": "vela-product-tab-information",
+      "disabled": true,
       "blocks": {
         "cc0df252-0d33-495c-82c8-a87d37c17375": {
           "type": "description",
