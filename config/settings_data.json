@@ -79,7 +79,6 @@
         "blocks": {
           "4d1df9b0-e83c-4939-8254-cca4200617db": {
             "type": "menu",
-            "disabled": true,
             "settings": {
               "title": "Catalog",
               "menu": true,
