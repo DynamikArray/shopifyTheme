@@ -70,6 +70,7 @@
     "newsletter_html_color": "#ffffff",
     "newsletter_popup_form_action": "https:\/\/velatheme.us13.list-manage.com\/subscribe\/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_size": "large",
     "checkout_accent_color": "#0cb1b1",
     "checkout_button_color": "#0cb1b1",
     "store_develop": false,
