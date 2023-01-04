@@ -3926,6 +3926,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   bottom: 30px;
 }
 
+.collection-five__button{
+    display:none !important;
+}
+
 .collection-five__button {
   font-size: calc(var(--font-size-base) + 7px);
   font-family: var(--font-heading-family);
