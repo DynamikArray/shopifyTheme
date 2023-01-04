@@ -171,6 +171,7 @@
     },
     "producttab-information": {
       "type": "vela-product-tab-information",
+      "disabled": true,
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
@@ -187,7 +188,7 @@
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "60px 0 30px",
         "margin_block": "",
-        "heading": "<span>You may<\/span> also like",
+        "heading": "You may also like",
         "sub_heading": "Sed quia consequuntur magni dolores eos qui ratione voluptatem"
       }
     }
