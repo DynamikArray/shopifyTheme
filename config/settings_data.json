@@ -43,7 +43,7 @@
     "quickview_quantity_selector": "text",
     "quickview_variant_selector": "radio",
     "quickview_variant_color_enable": true,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "cart_notes_enable": true,
     "social_twitter_link": "",
     "social_facebook_link": "https:\/\/www.facebook.com\/",
@@ -195,7 +195,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "enable": true,
+          "enable": false,
           "full_with": false,
           "padding_block": "10px 0",
           "color_bg": "#1f1f1f",
