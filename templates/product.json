@@ -74,10 +74,10 @@
           "type": "product_organization",
           "disabled": true,
           "settings": {
-            "product_available_enable": true,
+            "product_available_enable": false,
             "product_type_enable": false,
             "product_vendor_enable": false,
-            "product_sku_enable": true,
+            "product_sku_enable": false,
             "product_collection_enable": true,
             "product_collection_title": "Categories:",
             "product_coll_limit": 6,
