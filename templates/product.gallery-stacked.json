@@ -1,1 +1,202 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb-product","settings":{"padding_block":"","margin_block":"0 0 20px","breadcrumb_title":"Product","enable_title":"none","breadcrumb_bg":"#accdd2","breadcrumb_color_heading":"rgba(0,0,0,0)","breadcrumb_color":"rgba(0,0,0,0)","breadcrumb_color_link":"rgba(0,0,0,0)","breadcrumb-height":"44px","breadcrumb-mheight":"44px","text-align":"justify"}},"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"block_margin":"mb-3"}},"491c3678-a254-4566-821b-051ef3bc6c42":{"type":"reivew","settings":{"block_margin":"mb-3"}},"price":{"type":"price","settings":{"block_margin":"mb-3"}},"ef04f100-f436-4082-b40d-b8f839167ecd":{"type":"text","settings":{"text":"","block_margin":"mb-4"}},"fb8bae5f-a47f-44ca-a4f4-caea832ea54d":{"type":"countdown","settings":{"block_margin":"mb-4","heading":"Hurry up ! Deal ends in:"}},"buy_buttons":{"type":"buy_buttons","settings":{"block_margin":"mb-3","product_sku_enable":true,"product_available_enable":true,"product_selector":"radio","product_color_enable":true,"quantity_enabled":true,"quantity_selector":"text","enable_payment_button":true}},"product_organization":{"type":"product_organization","settings":{"product_available_enable":true,"product_type_enable":true,"product_vendor_enable":true,"product_sku_enable":true,"product_collection_enable":true,"product_collection_title":"Categories:","product_coll_limit":6,"product_tags_enable":true,"product_tags_title":"Tags:","product_tags_limit":6,"block_margin":"mb-3"}},"91c084e3-67d1-463e-b5bd-5a47d8837949":{"type":"share","settings":{"share_label":"Share","block_margin":"mb-4"}},"dee272e1-7d11-4647-afb0-a4ec995b5f3a":{"type":"collapsible_tab","settings":{"heading":"Description","content":"","page":"","description":true}},"9f04fe7a-71eb-4602-b18c-e4a670a6c032":{"type":"collapsible_tab","settings":{"heading":"Additional","content":"<p><br\/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br\/>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br\/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<br\/>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br\/><\/p>","page":"","description":false}},"acb513f9-bc06-40d5-a7a0-e8489cecaaa9":{"type":"collapsible_tab","settings":{"heading":"Shipping & Return","content":"<p><strong>Returns Policy<\/strong><\/p><p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<br\/><br\/><strong>Shipping<\/strong><\/p><p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.<\/p>","page":"","description":false}}},"block_order":["title","491c3678-a254-4566-821b-051ef3bc6c42","price","ef04f100-f436-4082-b40d-b8f839167ecd","fb8bae5f-a47f-44ca-a4f4-caea832ea54d","buy_buttons","product_organization","91c084e3-67d1-463e-b5bd-5a47d8837949","dee272e1-7d11-4647-afb0-a4ec995b5f3a","9f04fe7a-71eb-4602-b18c-e4a670a6c032","acb513f9-bc06-40d5-a7a0-e8489cecaaa9"],"settings":{"product_sticky":true,"media_layout":"stacked","enable_image_zoom":true,"enable_video_looping":true}},"producttab-information":{"type":"vela-product-tab-information","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"0 0 20px","margin_block":"","review_title":"Reviews","product_review":"bottom"}},"product-recommendations":{"type":"product-recommendations","settings":{"full_with":false,"color_bg":"rgba(0,0,0,0)","padding_block":"60px 0 30px","margin_block":"","heading":"<span>You may<\/span> also like","sub_heading":"Sed quia consequuntur magni dolores eos qui ratione voluptatem"}}},"order":["breadcrumb","main","producttab-information","product-recommendations"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb-product",
+      "settings": {
+        "padding_block": "",
+        "margin_block": "0 0 20px",
+        "breadcrumb_title": "Product",
+        "enable_title": "none",
+        "breadcrumb_bg": "#accdd2",
+        "breadcrumb_color_heading": "rgba(0,0,0,0)",
+        "breadcrumb_color": "rgba(0,0,0,0)",
+        "breadcrumb_color_link": "rgba(0,0,0,0)",
+        "breadcrumb-height": "44px",
+        "breadcrumb-mheight": "44px",
+        "text-align": "justify"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "491c3678-a254-4566-821b-051ef3bc6c42": {
+          "type": "reivew",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "block_margin": "mb-3"
+          }
+        },
+        "ef04f100-f436-4082-b40d-b8f839167ecd": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "block_margin": "mb-4"
+          }
+        },
+        "fb8bae5f-a47f-44ca-a4f4-caea832ea54d": {
+          "type": "countdown",
+          "settings": {
+            "block_margin": "mb-4",
+            "heading": "Hurry up ! Deal ends in:"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "block_margin": "mb-3",
+            "product_sku_enable": true,
+            "product_available_enable": true,
+            "product_selector": "radio",
+            "product_color_enable": true,
+            "quantity_enabled": true,
+            "quantity_selector": "text",
+            "enable_payment_button": true
+          }
+        },
+        "91c084e3-67d1-463e-b5bd-5a47d8837949": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "block_margin": "mb-4"
+          }
+        },
+        "d5b0a99e-4b0d-4811-98c9-c1c01db282a2": {
+          "type": "description",
+          "settings": {
+            "block_margin": "mb-0"
+          }
+        },
+        "9f04fe7a-71eb-4602-b18c-e4a670a6c032": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Additional",
+            "content": "<p><br\/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br\/>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br\/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.<br\/>eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br\/><\/p>",
+            "page": "",
+            "description": false
+          }
+        },
+        "acb513f9-bc06-40d5-a7a0-e8489cecaaa9": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping & Return",
+            "content": "<p><strong>Returns Policy<\/strong><\/p><p>If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.<br\/><br\/><strong>Shipping<\/strong><\/p><p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.<\/p>",
+            "page": "",
+            "description": false
+          }
+        },
+        "product_organization": {
+          "type": "product_organization",
+          "settings": {
+            "product_available_enable": true,
+            "product_type_enable": false,
+            "product_vendor_enable": false,
+            "product_sku_enable": true,
+            "product_collection_enable": false,
+            "product_collection_title": "Categories:",
+            "product_coll_limit": 6,
+            "product_tags_enable": true,
+            "product_tags_title": "Tags:",
+            "product_tags_limit": 6,
+            "block_margin": "mb-3"
+          }
+        },
+        "8e202953-3649-44d1-8a5a-ab02b79951f4": {
+          "type": "shopify:\/\/apps\/shuttle-sync-with-etsy\/blocks\/product-reviews\/2a754242-c2c0-4c10-9503-14343fa57b1c",
+          "settings": {
+            "template": "one",
+            "include_avatar": "yes",
+            "background_color": "#f1f1f1",
+            "border_color": "#f1f1f1",
+            "text_color": "#414141",
+            "title": "Product reviews from our Etsy shop",
+            "title_align": "center",
+            "title_size": "h2",
+            "reviewer_name": "full",
+            "star_color": "#f45800",
+            "star_size": 20,
+            "margin_top": 32,
+            "margin_bottom": 32,
+            "arrow_positioning": "outside",
+            "read_more_text": "Read More",
+            "hide_text": "Hide",
+            "posted_on_text": "Posted on"
+          }
+        },
+        "0daab0b5-3ff1-4803-9722-102cb1135a92": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "491c3678-a254-4566-821b-051ef3bc6c42",
+        "price",
+        "ef04f100-f436-4082-b40d-b8f839167ecd",
+        "fb8bae5f-a47f-44ca-a4f4-caea832ea54d",
+        "buy_buttons",
+        "91c084e3-67d1-463e-b5bd-5a47d8837949",
+        "d5b0a99e-4b0d-4811-98c9-c1c01db282a2",
+        "9f04fe7a-71eb-4602-b18c-e4a670a6c032",
+        "acb513f9-bc06-40d5-a7a0-e8489cecaaa9",
+        "product_organization",
+        "8e202953-3649-44d1-8a5a-ab02b79951f4",
+        "0daab0b5-3ff1-4803-9722-102cb1135a92"
+      ],
+      "settings": {
+        "product_sticky": true,
+        "media_layout": "stacked",
+        "enable_image_zoom": true,
+        "enable_video_looping": true
+      }
+    },
+    "16727951290ec81d28": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "producttab-information": {
+      "type": "vela-product-tab-information",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 20px",
+        "margin_block": "",
+        "review_title": "Reviews",
+        "product_review": "bottom"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "60px 0 30px",
+        "margin_block": "",
+        "heading": "<span>You may<\/span> also like",
+        "sub_heading": "Sed quia consequuntur magni dolores eos qui ratione voluptatem"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "16727951290ec81d28",
+    "producttab-information",
+    "product-recommendations"
+  ]
+}
