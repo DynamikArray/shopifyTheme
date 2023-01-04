@@ -432,7 +432,7 @@
         "template--15277379977365__4b292345-c119-4aa3-8933-6d23d066af21-1672792624fd11f303-0": {
           "type": "collection",
           "settings": {
-            "collection_title": "I Spy Bags",
+            "collection_title": "",
             "collection_image": "shopify:\/\/shop_images\/I_Spy_Bags.png",
             "collection_handle": "i-spy-bags"
           }
@@ -470,7 +470,7 @@
         "slide_enable": true,
         "navigation": true,
         "pagination": true,
-        "infinite": true,
+        "infinite": false,
         "autoplay": false,
         "autoplay_speed": "10000",
         "column1": 5,
