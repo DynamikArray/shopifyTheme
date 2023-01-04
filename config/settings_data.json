@@ -43,7 +43,7 @@
     "quickview_quantity_selector": "text",
     "quickview_variant_selector": "radio",
     "quickview_variant_color_enable": true,
-    "cart_type": "modal",
+    "cart_type": "drawer",
     "cart_notes_enable": true,
     "social_twitter_link": "",
     "social_facebook_link": "https:\/\/www.facebook.com\/",
