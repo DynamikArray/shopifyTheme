@@ -55,8 +55,8 @@
           "type": "buy_buttons",
           "settings": {
             "block_margin": "mb-3",
-            "product_sku_enable": true,
-            "product_available_enable": true,
+            "product_sku_enable": false,
+            "product_available_enable": false,
             "product_selector": "radio",
             "product_color_enable": true,
             "quantity_enabled": true,
@@ -189,7 +189,7 @@
         "padding_block": "60px 0 30px",
         "margin_block": "",
         "heading": "You may also like",
-        "sub_heading": "Sed quia consequuntur magni dolores eos qui ratione voluptatem"
+        "sub_heading": ""
       }
     }
   },
