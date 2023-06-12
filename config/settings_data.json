@@ -79,6 +79,40 @@
       "header": {
         "type": "header",
         "blocks": {
+          "ad117d93-08ac-4d47-9780-882b820ecf13": {
+            "type": "menu",
+            "settings": {
+              "title": "",
+              "menu": false,
+              "menu_col": "20",
+              "menu_menu_col": "25",
+              "products": false,
+              "products_col": "20",
+              "products_title": "",
+              "products_collection": "",
+              "html": false,
+              "html_col": "20",
+              "html_title": "",
+              "html_content": "",
+              "banner": false,
+              "banner_col": "20",
+              "banner_link": "",
+              "collection_enable": false,
+              "collection_title": "",
+              "colllection_col": "20",
+              "colllection_col_item": "20",
+              "velamenu_list_collection1": "i-spy-bags",
+              "velamenu_list_collection2": "",
+              "velamenu_list_collection3": "",
+              "velamenu_list_collection4": "",
+              "velamenu_list_collection5": "",
+              "velamenu_list_collection6": "",
+              "velamenu_list_collection7": "",
+              "velamenu_list_collection8": "",
+              "velamenu_list_collection9": "",
+              "velamenu_list_collection10": ""
+            }
+          },
           "4d1df9b0-e83c-4939-8254-cca4200617db": {
             "type": "menu",
             "settings": {
@@ -115,6 +149,7 @@
           }
         },
         "block_order": [
+          "ad117d93-08ac-4d47-9780-882b820ecf13",
           "4d1df9b0-e83c-4939-8254-cca4200617db"
         ],
         "settings": {
