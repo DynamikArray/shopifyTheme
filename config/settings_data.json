@@ -46,7 +46,7 @@
     "cart_type": "drawer",
     "cart_notes_enable": true,
     "social_twitter_link": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/",
+    "social_facebook_link": "https:\/\/www.facebook.com",
     "social_pinterest_link": "",
     "social_instagram_link": "https:\/\/instagram.com",
     "image_ratio": "square",
@@ -174,6 +174,7 @@
           },
           "3d32bd48-4a72-4f2d-a398-8de939a590e1": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "title": "Themes",
               "menu": "themes"
