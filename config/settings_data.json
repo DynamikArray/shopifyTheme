@@ -183,8 +183,8 @@
           "46f6b492-5bf9-4dd4-9bb9-87ec7bceaeee": {
             "type": "link_list",
             "settings": {
-              "title": "Information",
-              "menu": "information"
+              "title": "More Information",
+              "menu": "footer-menu-1"
             }
           },
           "cffe8b72-6a12-4941-925e-dde9089a46e6": {
