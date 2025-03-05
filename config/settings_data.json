@@ -163,8 +163,8 @@
         ],
         "settings": {
           "fullwidth": false,
-          "padding_block": "10px 0",
-          "logo": "shopify://shop_images/Joyful_Bundles_Logo_3-Final.svg",
+          "padding_block": "5px 0",
+          "logo": "shopify://shop_images/JoyfulBundlesLogo.svg",
           "logo_width": 250,
           "logo_position": "center",
           "menu": "main-menu",
