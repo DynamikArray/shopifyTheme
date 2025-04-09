@@ -191,7 +191,7 @@
                                 {%- endfor -%}
 
                                 {% comment %}START Product Personalization{% endcomment %}
-                                <div id="productPersonalizationFieldWrapper" class="">
+                                <div id="productPersonalizationFieldWrapper" class="hide">
                                     {% for personalization_option in product.options_by_name['Personalization'].values %}
                                       {% if personalization_option == 'Personalization'%}
                                     <label for="personalization"><b>Add your personalization:</b></label>
